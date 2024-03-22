@@ -7,7 +7,10 @@
         mc:Ignorable="d"
         Title="VentanaInicio" Height="450" Width="800">
     <Grid>
-        <Label Content="AlzheimerAtlas" HorizontalAlignment="Center" Margin="0,33,0,0" VerticalAlignment="Top" Height="66" Width="216" FontSize="30"/>
-        <Button x:Name="btn_empezar" Content="Empezar" HorizontalAlignment="Center" Margin="0,288,0,0" VerticalAlignment="Top" Height="57" Width="120" Click="btn_empezar_Click"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="/fondo.jpg"/>
+        </Grid.Background>
+        <Label Content="AlzheimerAtlas" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" Height="66" Width="216" FontSize="30" Background="#FF03DCD4"/>
+        <Button x:Name="btn_empezar" Content="Empezar" HorizontalAlignment="Left" Margin="520,200,0,0" VerticalAlignment="Top" Height="57" Width="120" Click="btn_empezar_Click"/>
     </Grid>
 </Window>

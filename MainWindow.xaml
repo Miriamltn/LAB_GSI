@@ -7,14 +7,52 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TabControl>
-            <TabItem Header="TabItem">
+        <TabControl SelectionChanged="TabControl_SelectionChanged">
+            <!-- TabItem Información -->
+            <TabItem x:Name="PInformacion" Header="Información">
+                <StackPanel>
+                    <!-- Encabezado del TabItem -->
+                    <!-- Contenido del TabItem -->
+                    <!-- Encabezado del TabItem -->
+                    <!-- Contenido del TabItem -->
+                    <!-- Encabezado del TabItem -->
+                    <TextBlock Text="¿Qué es la enfermedad del Alzhéimer?" FontSize="16" FontWeight="Bold"/>
+                    <TextBlock Text="La enfermedad de Alzheimer es un trastorno cerebral que destruye lentamente la memoria y la capacidad de pensar y, con el tiempo, la habilidad de llevar a cabo hasta las tareas más sencillas. Las personas con Alzheimer también experimentan cambios en la conducta y la personalidad."
+                   TextWrapping="Wrap"
+                   Width="258"
+                   Height="Auto"
+                   TextAlignment="Justify" Margin="-500,0,0,0"
+                   />
+                </StackPanel>
+            </TabItem>
+
+            <!-- TabItem Dudas -->
+            <TabItem x:Name="P_Dudas" Header="Dudas">
+                <Grid>
+                    <!-- Aquí colocamos el ToggleButton y el StackPanel -->
+                    <ToggleButton x:Name="toggleButton1" Content="Mostrar Información" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="43,30,0,0"/>
+                    <StackPanel x:Name="stackPanel1" Background="#FF17F9C0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,50,0,0" Visibility="Collapsed">
+                        <!-- Contenido del StackPanel -->
+                        <TextBlock Text="En la etapa avanzada de la demencia grave por enfermedad de Alzheimer, las personas suelen: Perder la capacidad para comunicarse. Las personas ya no pueden conversar o hablar de una manera que tenga sentido, aunque ocasionalmente puedan decir palabras o frases. Requerir asistencia diaria con el cuidado personal." 
+                            Margin="18"
+                            TextWrapping="Wrap"
+                            Width="400"
+                            Height="Auto"/>
+                    </StackPanel>
+                </Grid>
+            </TabItem>
+
+            <!-- Otros TabItems -->
+            <TabItem x:Name="P_Rutinas" Header="Rutinas">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
-            <TabItem Header="TabItem">
+            <TabItem x:Name="P_Recursos" Header="Recursos">
+                <Grid Background="#FFE5E5E5"/>
+            </TabItem>
+            <TabItem x:Name="P_Cuidador" Header="Cuidador">
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
         </TabControl>
-
     </Grid>
 </Window>
+
