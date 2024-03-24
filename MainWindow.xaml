@@ -11,18 +11,26 @@
             <!-- TabItem Información -->
             <TabItem x:Name="PInformacion" Header="Información">
                 <StackPanel>
-                    <!-- Encabezado del TabItem -->
-                    <!-- Contenido del TabItem -->
-                    <!-- Encabezado del TabItem -->
-                    <!-- Contenido del TabItem -->
-                    <!-- Encabezado del TabItem -->
-                    <TextBlock Text="¿Qué es la enfermedad del Alzhéimer?" FontSize="16" FontWeight="Bold"/>
-                    <TextBlock Text="La enfermedad de Alzheimer es un trastorno cerebral que destruye lentamente la memoria y la capacidad de pensar y, con el tiempo, la habilidad de llevar a cabo hasta las tareas más sencillas. Las personas con Alzheimer también experimentan cambios en la conducta y la personalidad."
-                   TextWrapping="Wrap"
-                   Width="258"
-                   Height="Auto"
-                   TextAlignment="Justify" Margin="-500,0,0,0"
-                   />
+                    <TextBlock FontSize="16" FontWeight="Bold" Height="25" Width="788"><Run Text="¿Qué es la enfermedad del Alzhéimer?"/><Run Language="es-es" Text="&#x9;&#x9;&#x9;&#x9;¿Cuáles son sus síntomas"/></TextBlock>
+                    <TextBox x:Name="tb_definicion"
+                 TextWrapping="Wrap"
+                 VerticalScrollBarVisibility="Auto"
+                 IsReadOnly="True"
+                 Width="258"
+                 Height="Auto"
+                 TextAlignment="Justify"
+                 Margin="-500,0,0,0"/>
+
+                 <TextBox x:Name="tb_sintomas"
+                 TextWrapping="Wrap"
+                 VerticalScrollBarVisibility="Auto"
+                 IsReadOnly="True"
+                 Width="258"
+                 Height="Auto"
+                 TextAlignment="Justify"
+                 Margin="278,-17,-100,10"
+                 HorizontalScrollBarVisibility="Disabled"/>
+                   
                 </StackPanel>
             </TabItem>
 

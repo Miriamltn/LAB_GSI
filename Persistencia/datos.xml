@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<informacion>
+	<seccion nombre="Definicion">
+		<texto>La enfermedad de Alzheimer es un trastorno cerebral que destruye lentamente la memoria y la capacidad de pensar y, con el tiempo, la habilidad de llevar a cabo hasta las tareas más sencillas. Las personas con Alzheimer también experimentan cambios en la conducta y la personalidad.</texto>
+	</seccion>
+	
+	<seccion nombre="Sintomas">
+		<texto>Las personas con enfermedad de Alzheimer podrían pasar por las siguientes situaciones:
+		<item>Repetir afirmaciones y preguntas una y otra vez.</item>
+			<item>Olvidar conversaciones, citas médicas o eventos.</item>
+			<item>Extraviar artículos y, a menudo, ponerlos en lugares en los que no tiene sentido hacerlo.</item>
+			<item>Perderse en lugares que solían conocer bien.</item>
+			<item>Con el tiempo, olvidar los nombres de familiares y de objetos de uso cotidiano.</item>
+			<item>Tener problemas para encontrar el nombre adecuado de objetos, para expresar pensamientos o para participar en conversaciones.</item>
+		</texto>
+	</seccion>
+</informacion>
+
