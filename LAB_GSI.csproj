@@ -107,5 +107,8 @@
   <ItemGroup>
     <Resource Include="Persistencia\datos.xml" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\fondoInicio.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

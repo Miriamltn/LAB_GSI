@@ -44,7 +44,7 @@
                             </TextBlock>
                         </Expander.Header>
 
-                                        <!-- TextBox para los síntomas -->
+                                       <!-- TextBox para los síntomas -->
                           <TextBox x:Name="tb_sintomas"
                           TextWrapping="Wrap"
                           VerticalScrollBarVisibility="Auto"
