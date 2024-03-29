@@ -186,23 +186,13 @@ namespace LAB_GSI
             }
         }
 
-        private void Expander1_Expanded(object sender, RoutedEventArgs e)
-        {
-            // Aquí puedes poner el código que desees cuando el Expander1 se expanda
-        }
-
-        private void Expander2_Expanded(object sender, RoutedEventArgs e)
-        {
-            // Aquí puedes poner el código que desees cuando el Expander2 se expanda
-        }
-
-        private void Expander9_Expanded(object sender, RoutedEventArgs e)
+        private void Expander_Expanded(object sender, RoutedEventArgs e)
         {
             // Obtén el Expander que se expandió
             Expander expanded = sender as Expander;
 
             // Crea una lista con todos tus Expanders
-            List<Expander> allExpanders = new List<Expander> { Expander9 };
+            List<Expander> allExpanders = new List<Expander> { Expander1, Expander2, Expander3, Expander4, Expander5, Expander6, Expander6, Expander8 };
 
             // Cierra todos los Expanders excepto el que se expandió
             foreach (Expander expander in allExpanders)
@@ -213,5 +203,7 @@ namespace LAB_GSI
                 }
             }
         }
+
+
     }
 }

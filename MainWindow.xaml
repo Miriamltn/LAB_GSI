@@ -5,107 +5,172 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LAB_GSI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"  ResizeMode="NoResize" Height="450" Width="800">
+
     <Grid>
-        <TabControl SelectionChanged="TabControl_SelectionChanged">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition Width="50*"/>
+        </Grid.ColumnDefinitions>
+
+        <TabControl SelectionChanged="TabControl_SelectionChanged" Grid.ColumnSpan="2" Background="#FFA9BACB" BorderBrush="#FFA9BACB">
+
             <!-- TabItem Información -->
+
             <TabItem x:Name="PInformacion" Header="Información">
-                <StackPanel>
-                    <Expander x:Name="Expander1" HorizontalAlignment="Left" Background="LightGray" Expanded="Expander1_Expanded" Width="320">
-                        <Expander.Header>
-                            <TextBlock FontSize="16" FontWeight="Bold" Height="25" Width="300">
-                                <Run Text="¿Qué es la enfermedad del Alzhéimer?" />
-                                <Run Text=" " />
-                                <Run Text="&#x9;&#x9;&#x9;" />
-                            </TextBlock>
-                        </Expander.Header>
+                <!-- Cambio de colores -->
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFD4AF37" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
 
-                        <StackPanel>
-                            <TextBox x:Name="tb_definicion"
-                                     TextWrapping="Wrap"
-                                     VerticalScrollBarVisibility="Auto"
-                                     IsReadOnly="True"
-                                     Width="258"
-                                     Height="Auto"
-                                     TextAlignment="Justify"
-                                     Margin="5"
-                                     HorizontalScrollBarVisibility="Disabled"
-                                     Text="Aquí va la definición de la enfermedad del Alzheimer..." />
+                <ScrollViewer>
+
+                    <Grid Grid.Column="1" >
+                        <StackPanel Name="primero" Margin="0,0,400,0" Grid.Column="1" Grid.ColumnSpan="1">
+
+                            <Expander x:Name="Expander1" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
+                                <Expander.Header>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14">
+                                        <Run Language="es-es" Text="¿Qué es el alzheimer?"/>
+                                    </TextBlock>
+                                </Expander.Header>
+                                <StackPanel
+                                        Margin="24,8,24,16"
+                                        Orientation="Vertical">
+                                    <TextBlock x:Name="tb_definicion" TextWrapping="Wrap">
+                                        <Run Language="es-es" Text="Definición de la enfermedad"/>
+                                    </TextBlock>
+                                </StackPanel>
+                            </Expander>
+
+                            <Expander x:Name="Expander2" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
+                                <Expander.Header>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14"><Run Language="es-es" Text="¿Qué síntomas aparecen con esta enfermedad?"/>
+                                    </TextBlock>
+                                </Expander.Header>
+                                <StackPanel
+                                        Margin="24,8,24,16"
+                                        Orientation="Vertical">
+                                    <TextBlock x:Name="tb_sintomas" TextWrapping="Wrap">
+                                        <Run Language="es-es" Text="Síntomas de la enfermedad"/>
+                                    </TextBlock>
+                                </StackPanel>
+                            </Expander>
+
+                            <Expander x:Name="Expander3" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24, 60" BorderBrush="#FF192841">
+                                <Expander.Header>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14">
+                                        <Run Language="es-es" Text="¿Qué fases presenta la enfermedad?"/>
+                                    </TextBlock>
+                                </Expander.Header>
+                                <StackPanel
+                                        Margin="24,8,24,16"
+                                        Orientation="Vertical">
+                                    <TextBlock x:Name="tb_fases" TextWrapping="Wrap">
+                                         <Run Language="es-es" Text="Son 3 fases"/>
+                                    </TextBlock>
+                                </StackPanel>
+                            </Expander>
+
+                            <Expander x:Name="Expander4" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
+                                <Expander.Header>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14">
+                                        <Run Language="es-es" Text="¿Qué avances hay en el tratamiento?"/>
+                                    </TextBlock>
+                                </Expander.Header>
+                                <StackPanel
+                                        Margin="24,8,24,16"
+                                        Orientation="Vertical">
+                                    <TextBlock x:Name="tb_avances" TextWrapping="Wrap"> 
+                                        <Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/>
+                                    </TextBlock>
+                                </StackPanel>
+                            </Expander>
+
                         </StackPanel>
-                    </Expander>
 
-                    <!-- Segundo Expander -->
-                    <Expander x:Name="Expander2" HorizontalAlignment="Left" Background="LightGray" Expanded="Expander2_Expanded" Width="320">
-                        <Expander.Header>
-                            <TextBlock FontSize="16" FontWeight="Bold" Height="25" Width="300">
-                                <Run Text="¿Cuáles son sus síntomas?" />
-                                <Run Text=" " />
-                                <Run Text="&#x9;&#x9;&#x9;" />
-                            </TextBlock>
-                        </Expander.Header>
+                        <!-- OTRO STACKPANEL -->
+                        <StackPanel x:Name="segundo" Grid.Column="2" Grid.ColumnSpan="2" Margin="398,0,0,0">
 
-                        <!-- TextBox para los síntomas -->
-                        <TextBox x:Name="tb_sintomas"
-                          TextWrapping="Wrap"
-                          VerticalScrollBarVisibility="Auto"
-                          IsReadOnly="True"
-                          Width="258"
-                          Height="Auto"
-                          TextAlignment="Justify"
-                          Margin="5"
-                          HorizontalScrollBarVisibility="Disabled"
-                          Text="Aquí van los síntomas de la enfermedad del Alzheimer..." />
-                    </Expander>
+                            <Expander x:Name="Expander5" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
+                                <Expander.Header>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" Width="326"><Run Text="¿Qué déficits puede presentar el enfermo?"/>
+                                        <Run Language="es-es"/>
+                                    </TextBlock>
+                                </Expander.Header>
+                                <StackPanel
+                                        Margin="24,8,24,16"
+                                        Orientation="Vertical">
+                                    <TextBlock x:Name="tb_deficits" TextWrapping="Wrap">
+                                        <Run Language="es-es" Text="Deficits"/>
+                                    </TextBlock>
+                                </StackPanel>
+                            </Expander>
 
-                    <Expander x:Name="Expander3" HorizontalAlignment="Left" Background="LightGray" Expanded="Expander2_Expanded" Width="320">
-                        <Expander.Header>
-                            <TextBlock FontSize="16" FontWeight="Bold" Height="25" Width="300">
-                                <Run Text="¿Cuáles son sus fases?" />
-                                <Run Text=" " />
-                                <Run Text="&#x9;&#x9;&#x9;" />
-                            </TextBlock>
-                        </Expander.Header>
+                            <Expander x:Name="Expander6" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
+                                <Expander.Header>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14"> 
+                                        <Run Language="es-es" Text="¿Se pueden tratar los síntomas?"/>
+                                    </TextBlock>
+                                </Expander.Header>
+                                <StackPanel
+                                        Margin="24,8,24,16"
+                                        Orientation="Vertical">
+                                    <TextBlock x:Name="tb_tratarSintomas" TextWrapping="Wrap">
+                                        <Run Language="es-es" Text="Síntomas de la enfermedad"/>
+                                    </TextBlock>
+                                </StackPanel>
+                            </Expander>
 
-                        <!-- TextBox para las fases -->
-                        <TextBox x:Name="tb_fases"
-                          TextWrapping="Wrap"
-                          VerticalScrollBarVisibility="Auto"
-                          IsReadOnly="True"
-                          Width="258"
-                          Height="Auto"
-                          TextAlignment="Justify"
-                          Margin="5"
-                          HorizontalScrollBarVisibility="Disabled"
-                          Text="Las fases del Alzheimer son ..." />
-                    </Expander>
+                            <Expander x:Name="Expander7" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24, 60" BorderBrush="#FF192841">
+                                <Expander.Header>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14">
+                                        <Run Language="es-es" Text="¿Cómo actuar al saber la noticia?"/>
+                                    </TextBlock>
+                                </Expander.Header>
+                                <StackPanel
+                                        Margin="24,8,24,16"
+                                        Orientation="Vertical">
+                                    <TextBlock x:Name="tb_comoActuar" TextWrapping="Wrap">
+                                        <Run Language="es-es" Text="Son 3 fases"/>
+                                    </TextBlock>
+                                </StackPanel>
+                            </Expander>
 
-                    <Expander x:Name="Expander4" HorizontalAlignment="Left" Background="LightGray" Expanded="Expander1_Expanded" Width="320">
-                        <Expander.Header>
-                            <TextBlock FontSize="16" FontWeight="Bold" Height="25" Width="300">
-                                <Run Text="¿Cuáles son sus tratamientos?" />
-                                <Run Text=" " />
-                                <Run Text="&#x9;&#x9;&#x9;" />
-                            </TextBlock>
-                        </Expander.Header>
+                            <Expander x:Name="Expander8" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
+                                <Expander.Header>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14">
+                                        <Run Text="¿Que alteraciones fisicas el cuidador principal? "/>
+                                        <Run Language="es-es"/>
+                                    </TextBlock>
+                                </Expander.Header>
+                                <StackPanel
+                                        Margin="24,8,24,16"
+                                        Orientation="Vertical">
+                                    <TextBlock x:Name="tb_avances1" TextWrapping="Wrap">
+                                        <Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/>
+                                    </TextBlock>
+                                </StackPanel>
+                            </Expander>
 
-                        <!-- TextBox para los avances -->
-                        <TextBox x:Name="tb_avances"
-                          TextWrapping="Wrap"
-                          VerticalScrollBarVisibility="Auto"
-                          IsReadOnly="True"
-                          Width="258"
-                          Height="Auto"
-                          TextAlignment="Justify"
-                          Margin="5"
-                          HorizontalScrollBarVisibility="Disabled"
-                          Text="Las fases del Alzheimer son ..." />
-                    </Expander>
+                        </StackPanel>
+                    </Grid>
+                </ScrollViewer>
 
-                </StackPanel>
+
             </TabItem>
 
             <!-- TabItem Dudas -->
             <TabItem x:Name="P_Dudas" Header="Dudas">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFD4AF37" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
                 <Grid Margin="0,0,-8,172" Height="408">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="101*"/>
@@ -118,7 +183,7 @@
                     <ScrollViewer VerticalScrollBarVisibility="Auto" Background="Transparent">
                         <StackPanel x:Name="StackPanel_AI">
                             <!-- Aquí van los elementos dentro del StackPanel -->
-                            <Expander x:Name="Expander9" Background="LightGray" IsExpanded="False" Width="391" VerticalAlignment="Top" Expanded="Expander9_Expanded">
+                            <Expander x:Name="Expander9" Background="LightGray" IsExpanded="False" Width="391" VerticalAlignment="Top">
                                 <Expander.Header>
                                     <TextBlock FontSize="16" FontWeight="Bold" Height="25" Width="366">
                                         <Run Text="¿Relación entre la enfermedad y la nutrición?" />
@@ -155,13 +220,28 @@
 
             <!-- Otros TabItems -->
             <TabItem x:Name="P_Rutinas" Header="Rutinas">
-                <Grid Background="#FFE5E5E5"/>
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFD4AF37" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
             </TabItem>
             <TabItem x:Name="P_Recursos" Header="Recursos">
-                <Grid Background="#FFE5E5E5"/>
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFD4AF37" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
             </TabItem>
             <TabItem x:Name="P_Cuidador" Header="Cuidador">
-                <Grid Background="#FFE5E5E5"/>
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFD4AF37" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background> />
             </TabItem>
         </TabControl>
     </Grid>
