@@ -47,8 +47,21 @@
 				<nombre>Progresión de la enfermedad</nombre>
 				<descripcion>A medida que mueren más células, la enfermedad de Alzheimer continúa progresando.</descripcion>
 			</etapa>
-		
 	</seccion>
+	
+	<seccion nombre="Nutricion">
+		<informacion>
+			<texto>Las personas con enfermedad de Alzheimer pueden presentar dificultades para la ingesta de alimentos y, en consecuencia, su correcta nutrición. Algunos de los más comunes son: </texto>
+			<item>Sequedad bucal.</item>
+			<item>Alteraciones en la masticación o deglución.</item>
+			<item>Anorexia (falta de apetito).</item>
+			<item>Disminución de la percepción de los olores.</item>
+			<item>Alteración o deterioro del gusto.</item>
+			<texto>Además, debido a la propia pérdida de memoria, si no cuenta con una estrecha supervisión, es habitual que la persona con Alzheimer caiga en la monotonía de llevar una alimentación poco variada, repetir muchas comidas u olvidarse de comer. Desde las fases iniciales de la enfermedad, es frecuente que las personas afectadas bajen de peso de forma significativa y no intencionada.</texto>
+			<texto>Por todo ello, las recomendaciones de nutrición para las personas con Alzheimer suelen ir enfocadas a asegurar un aporte calórico y nutricional adecuado para evitar la pérdida de peso y prevenir la desnutrición.</texto>
+		</informacion>
+	</seccion>
+
 
 </informacion>
 

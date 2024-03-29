@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -11,9 +12,7 @@ namespace LAB_GSI
         public MainWindow()
         {
             InitializeComponent();
-            toggleButton1.Checked += ToggleButton_Checked;
-            toggleButton1.Unchecked += ToggleButton_Unchecked;
-            stackPanel1.Visibility = Visibility.Collapsed;
+            //stackPanel1.Visibility = Visibility.Collapsed;
             CargarDefinicionDesdeXML();
         }
 
@@ -109,7 +108,7 @@ namespace LAB_GSI
                         string textoTratamientos = "";
                         foreach (XmlNode tratamientoNode in tratamientosNodes)
                         {
-                            string nombreTratamiento = tratamientoNode.SelectSingleNode("nombre").InnerText ;
+                            string nombreTratamiento = tratamientoNode.SelectSingleNode("nombre").InnerText;
                             string descripcionTratamiento = tratamientoNode.SelectSingleNode("descripcion").InnerText;
 
                             textoTratamientos += $"{nombreTratamiento}: {descripcionTratamiento}" + Environment.NewLine + Environment.NewLine;
@@ -127,6 +126,43 @@ namespace LAB_GSI
                 {
                     tb_avances.Text = "Sección 'Tratamientos' no encontrada en el archivo XML.";
                 }
+                XmlNode seccionNutricion = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Nutricion']");
+
+                if (seccionNutricion != null)
+                {
+                    // Obtener los elementos 'texto' y 'item' dentro de 'informacion'
+                    XmlNodeList textoNodes = seccionNutricion.SelectNodes("informacion/texto");
+                    XmlNodeList itemNodes = seccionNutricion.SelectNodes("informacion/item");
+
+                    if (textoNodes != null && textoNodes.Count > 0 && itemNodes != null && itemNodes.Count > 0)
+                    {
+                        // Construir el texto con la información de nutrición
+                        StringBuilder textoNutricion = new StringBuilder();
+                        foreach (XmlNode textoNode in textoNodes)
+                        {
+                            textoNutricion.AppendLine(textoNode.InnerText.Trim());
+                            textoNutricion.AppendLine();
+                        }
+
+                        textoNutricion.AppendLine("Algunos de los problemas comunes pueden ser:");
+
+                        foreach (XmlNode itemNode in itemNodes)
+                        {
+                            textoNutricion.AppendLine($"- {itemNode.InnerText.Trim()}");
+                        }
+
+                        // Mostrar la información de nutrición en el TextBox tb_nutricion
+                        tb_nutricion.Text = textoNutricion.ToString().Trim();
+                    }
+                    else
+                    {
+                        tb_nutricion.Text = "No se encontró la información de nutrición en el archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_nutricion.Text = "Sección 'Nutricion' no encontrada en el archivo XML.";
+                }
             }
             catch (Exception ex)
             {
@@ -136,28 +172,17 @@ namespace LAB_GSI
             }
         }
 
-        private void ToggleButton_Checked(object sender, RoutedEventArgs e)
-        {
-            stackPanel1.Visibility = Visibility.Visible;
-            // Aquí puedes realizar acciones adicionales cuando se muestra el contenido
-        }
-
-        private void ToggleButton_Unchecked(object sender, RoutedEventArgs e)
-        {
-            stackPanel1.Visibility = Visibility.Collapsed;
-            // Aquí puedes realizar acciones adicionales cuando se oculta el contenido
-        }
 
         private void TabControl_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             // Verificar si la pestaña seleccionada es "Dudas"
             if (P_Dudas.IsSelected)
             {
-                stackPanel1.Visibility = Visibility.Visible;
+                //stackPanel1.Visibility = Visibility.Visible;
             }
             else
             {
-                stackPanel1.Visibility = Visibility.Collapsed;
+                //stackPanel1.Visibility = Visibility.Collapsed;
             }
         }
 
@@ -169,6 +194,24 @@ namespace LAB_GSI
         private void Expander2_Expanded(object sender, RoutedEventArgs e)
         {
             // Aquí puedes poner el código que desees cuando el Expander2 se expanda
+        }
+
+        private void Expander9_Expanded(object sender, RoutedEventArgs e)
+        {
+            // Obtén el Expander que se expandió
+            Expander expanded = sender as Expander;
+
+            // Crea una lista con todos tus Expanders
+            List<Expander> allExpanders = new List<Expander> { Expander9 };
+
+            // Cierra todos los Expanders excepto el que se expandió
+            foreach (Expander expander in allExpanders)
+            {
+                if (expander != expanded)
+                {
+                    expander.IsExpanded = false;
+                }
+            }
         }
     }
 }
