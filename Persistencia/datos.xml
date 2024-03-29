@@ -62,6 +62,31 @@
 		</informacion>
 	</seccion>
 
+	<seccion nombre="Aceptación de la enfermedad">
+		<texto>Para poder aceptar la enfermedad de Alzheimer, y reducir su impacto en la vida de la persona cuidadora y en el entorno familiar, es importante conocer qué es el Alzheimer y qué le sucede a la persona afectada. También lo es el hecho de comprender que las alteraciones que sufre en su cerebro son la causa de los cambios en su comportamiento, conducta y reacciones.
+		
+Resulta clave, pues, comprender que preguntar reiteradamente lo mismo, no reconocer a algún conocido o negar algún error que ha cometido son síntomas del Alzheimer. No son reacciones egoístas o actos realizados a propósito para enojar o fastidiar a quien le cuida.
+
+Si, por ejemplo, entendemos que nuestro familiar afectado se encuentra en un estado de frecuente confusión porque le resulta difícil integrar demasiada información o procesarla de forma adecuada, nos será más fácil comprender algunas de sus conductas. Esto también permitirá que minimicemos posibles reacciones negativas hacia él, como llevarle la contraria, y seremos más capaces de adoptar estrategias para manejar situaciones que pueden desbordarnos.
+		</texto>
+	</seccion>
+
+	<seccion nombre="Alteraciones fisicas">
+		<texto>A medida que la enfermedad de Alzheimer avanza hacia las últimas etapas, los cambios en el cerebro comienzan a afectar las funciones físicas. Estos cambios pueden afectar la capacidad de tragar, de mantener el equilibrio y de controlar los movimientos del intestino y de la vejiga.
+
+Además, estos efectos pueden derivar en otros problemas de salud como fracturas, escaras, problemas dentales, líquido en los pulmones, entre otros
+		</texto>
+	</seccion>
+
+	<seccion nombre="Causas">
+		<texto>Los investigadores creen que no existe una sola causa del Alzhéimer. Probablemente, la enfermedad surge a partir de múltiples factores, como la genética, el estilo de vida y el medio ambiente. Los científicos han identificado factores que aumentan el riesgo de padecer esta enfermedad. Aunque algunos factores de riesgo (edad, historia familiar y herencia) no pueden modificarse, nueva evidencia sugiere que puede haber otros factores sobre los que podemos influir.
+		</texto>
+	</seccion>
+
+	<seccion nombre="Esperanza de vida">
+		<texto>Cada caso es distinto y el avance de la enfermedad varía de una persona a otra. En promedio, desde la aparición de los primeros síntomas, las personas con alzhéimer pueden vivir de 8 (el promedio) a 20 años. 
+		</texto>
+	</seccion>
 
 </informacion>
 

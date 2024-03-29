@@ -163,6 +163,62 @@ namespace LAB_GSI
                 {
                     tb_nutricion.Text = "Sección 'Nutricion' no encontrada en el archivo XML.";
                 }
+
+                XmlNode seccionActuar = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Aceptación de la enfermedad']");
+
+                if (seccionActuar != null)
+                {
+                    string textoActuar = seccionActuar.SelectSingleNode("texto").InnerText;
+
+                    // Mostrar la definición en el TextBox tb_definicion
+                    tb_comoActuar.Text = textoActuar;
+                }
+                else
+                {
+                    tb_comoActuar.Text = "Sección 'Aceptacion de la enfermedad' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionFisica = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Alteraciones fisicas']");
+
+                if (seccionFisica != null)
+                {
+                    string textoFisico = seccionFisica.SelectSingleNode("texto").InnerText;
+
+                    // Mostrar la definición en el TextBox tb_definicion
+                    tb_fisicas.Text = textoFisico;
+                }
+                else
+                {
+                    tb_fisicas.Text = "Sección 'Alteraciones fisicas' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionCausas = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Causas']");
+
+                if (seccionCausas != null)
+                {
+                    string textoCausas = seccionCausas.SelectSingleNode("texto").InnerText;
+
+                    // Mostrar la definición en el TextBox tb_definicion
+                    tb_causas.Text = textoCausas;
+                }
+                else
+                {
+                    tb_causas.Text = "Sección 'Causas' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionEsperanza = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Esperanza de vida']");
+
+                if (seccionEsperanza != null)
+                {
+                    string textoEsperanza = seccionEsperanza.SelectSingleNode("texto").InnerText;
+
+                    // Mostrar la definición en el TextBox tb_definicion
+                    tb_Esperanza.Text = textoEsperanza;
+                }
+                else
+                {
+                    tb_Esperanza.Text = "Sección 'Esperanza de vida' no encontrada en el archivo XML.";
+                }
             }
             catch (Exception ex)
             {

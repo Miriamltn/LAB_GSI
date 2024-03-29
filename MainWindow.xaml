@@ -97,14 +97,14 @@
 
                             <Expander x:Name="Expander5" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" Width="326"><Run Text="¿Qué déficits puede presentar el enfermo?"/>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" Width="326"><Run Text="¿Qué causa la enfermedad del Alzheimer?"/>
                                         <Run Language="es-es"/>
                                     </TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                         Margin="24,8,24,16"
                                         Orientation="Vertical">
-                                    <TextBlock x:Name="tb_deficits" TextWrapping="Wrap">
+                                    <TextBlock x:Name="tb_causas" TextWrapping="Wrap">
                                         <Run Language="es-es" Text="Deficits"/>
                                     </TextBlock>
                                 </StackPanel>
@@ -113,13 +113,13 @@
                             <Expander x:Name="Expander6" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
                                 <Expander.Header>
                                     <TextBlock TextWrapping="Wrap" FontSize="14"> 
-                                        <Run Language="es-es" Text="¿Se pueden tratar los síntomas?"/>
+                                        <Run Language="es-es" Text="¿Cuál es la esperanza de vida tras el diagnóstico?"/>
                                     </TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                         Margin="24,8,24,16"
                                         Orientation="Vertical">
-                                    <TextBlock x:Name="tb_tratarSintomas" TextWrapping="Wrap">
+                                    <TextBlock x:Name="tb_Esperanza" TextWrapping="Wrap">
                                         <Run Language="es-es" Text="Síntomas de la enfermedad"/>
                                     </TextBlock>
                                 </StackPanel>
@@ -143,14 +143,14 @@
                             <Expander x:Name="Expander8" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
                                 <Expander.Header>
                                     <TextBlock TextWrapping="Wrap" FontSize="14">
-                                        <Run Text="¿Que alteraciones fisicas el cuidador principal? "/>
+                                        <Run Text="¿Que alteraciones fisicas sufre el enfermo? "/>
                                         <Run Language="es-es"/>
                                     </TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                         Margin="24,8,24,16"
                                         Orientation="Vertical">
-                                    <TextBlock x:Name="tb_avances1" TextWrapping="Wrap">
+                                    <TextBlock x:Name="tb_fisicas" TextWrapping="Wrap">
                                         <Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/>
                                     </TextBlock>
                                 </StackPanel>
