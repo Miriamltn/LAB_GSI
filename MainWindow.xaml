@@ -11,26 +11,51 @@
             <!-- TabItem Información -->
             <TabItem x:Name="PInformacion" Header="Información">
                 <StackPanel>
-                    <TextBlock FontSize="16" FontWeight="Bold" Height="25" Width="788"><Run Text="¿Qué es la enfermedad del Alzhéimer?"/><Run Language="es-es" Text="&#x9;&#x9;&#x9;&#x9;¿Cuáles son sus síntomas"/></TextBlock>
-                    <TextBox x:Name="tb_definicion"
-                 TextWrapping="Wrap"
-                 VerticalScrollBarVisibility="Auto"
-                 IsReadOnly="True"
-                 Width="258"
-                 Height="Auto"
-                 TextAlignment="Justify"
-                 Margin="-500,0,0,0"/>
+                    <Expander x:Name="Expander1" HorizontalAlignment="Left" Background="LightGray" Expanded="Expander1_Expanded" Width="320">
+                        <Expander.Header>
+                            <TextBlock FontSize="16" FontWeight="Bold" Height="25" Width="300">
+                                <Run Text="¿Qué es la enfermedad del Alzhéimer?" />
+                                <Run Text=" " />
+                                <Run Text="&#x9;&#x9;&#x9;" />
+                            </TextBlock>
+                        </Expander.Header>
 
-                 <TextBox x:Name="tb_sintomas"
-                 TextWrapping="Wrap"
-                 VerticalScrollBarVisibility="Auto"
-                 IsReadOnly="True"
-                 Width="258"
-                 Height="Auto"
-                 TextAlignment="Justify"
-                 Margin="278,-17,-100,10"
-                 HorizontalScrollBarVisibility="Disabled"/>
-                   
+                        <StackPanel>
+                            <TextBox x:Name="tb_definicion"
+                                     TextWrapping="Wrap"
+                                     VerticalScrollBarVisibility="Auto"
+                                     IsReadOnly="True"
+                                     Width="258"
+                                     Height="Auto"
+                                     TextAlignment="Justify"
+                                     Margin="5"
+                                     HorizontalScrollBarVisibility="Disabled"
+                                     Text="Aquí va la definición de la enfermedad del Alzheimer..." />
+                        </StackPanel>
+                    </Expander>
+
+                    <!-- Segundo Expander -->
+                    <Expander x:Name="Expander2" HorizontalAlignment="Left" Background="LightGray" Expanded="Expander2_Expanded" Width="320">
+                        <Expander.Header>
+                            <TextBlock FontSize="16" FontWeight="Bold" Height="25" Width="300">
+                                <Run Text="¿Cuáles son sus síntomas?" />
+                                <Run Text=" " />
+                                <Run Text="&#x9;&#x9;&#x9;" />
+                            </TextBlock>
+                        </Expander.Header>
+
+                                        <!-- TextBox para los síntomas -->
+                          <TextBox x:Name="tb_sintomas"
+                          TextWrapping="Wrap"
+                          VerticalScrollBarVisibility="Auto"
+                          IsReadOnly="True"
+                          Width="258"
+                          Height="Auto"
+                          TextAlignment="Justify"
+                          Margin="5"
+                          HorizontalScrollBarVisibility="Disabled"
+                          Text="Aquí van los síntomas de la enfermedad del Alzheimer..." />         
+                    </Expander>
                 </StackPanel>
             </TabItem>
 
@@ -63,4 +88,3 @@
         </TabControl>
     </Grid>
 </Window>
-

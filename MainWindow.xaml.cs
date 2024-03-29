@@ -84,7 +84,7 @@ namespace LAB_GSI
             catch (Exception ex)
             {
                 tb_definicion.Text = "Error al cargar los datos desde el archivo XML: " + ex.Message;
-                tb_sintomas.Text = "Error al cargar los datos desde el archivo XML: " + ex.Message;
+                /*tb_sintomas.Text = "Error al cargar los datos desde el archivo XML: " + ex.Message;*/
             }
         }
 
@@ -113,6 +113,13 @@ namespace LAB_GSI
             }
         }
 
+        private void Expander1_Expanded(object sender, RoutedEventArgs e)
+        {
 
+        }
+        private void Expander2_Expanded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
