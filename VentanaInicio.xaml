@@ -19,7 +19,7 @@
         Width="84"
         Click="btn_empezar_Click" 
         FontWeight="Bold"
-        BorderThickness="0" Background="#FFB57EDC">
+        BorderThickness="0" Background="#FFB5DC7E">
             <Button.Template>
                 <ControlTemplate TargetType="Button">
                     <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
