@@ -14,5 +14,20 @@
 			<item>Tener problemas para encontrar el nombre adecuado de objetos, para expresar pensamientos o para participar en conversaciones.</item>
 		</texto>
 	</seccion>
+
+	<seccion nombre="Fases">
+		<etapa>
+			<nombre>Estado leve (nivel inicial)</nombre>
+			<descripcion>Las personas pueden desenvolverse de manera independiente, sin embargo, tendrán ciertos episodios de pérdida de memoria.</descripcion>
+		</etapa>
+		<etapa>
+			<nombre>Estado moderado (nivel medio)</nombre>
+			<descripcion>Es la etapa más prolongada. Estas personas confunden palabras, se frustran o actúan de forma inesperada.</descripcion>
+		</etapa>
+		<etapa>
+			<nombre>Estado grave (nivel final)</nombre>
+			<descripcion>En esta última fase, las personas pierden la capacidad de responder a su entorno. Pueden producirse cambios de personalidad y la comunicación se vuelve muy difícil.</descripcion>
+		</etapa>
+	</seccion>
 </informacion>
 

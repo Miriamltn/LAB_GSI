@@ -56,6 +56,29 @@
                           HorizontalScrollBarVisibility="Disabled"
                           Text="Aquí van los síntomas de la enfermedad del Alzheimer..." />         
                     </Expander>
+
+                    <Expander x:Name="Expander3" HorizontalAlignment="Left" Background="LightGray" Expanded="Expander2_Expanded" Width="320">
+                        <Expander.Header>
+                            <TextBlock FontSize="16" FontWeight="Bold" Height="25" Width="300">
+                                <Run Text="¿Cuáles son sus fases?" />
+                                <Run Text=" " />
+                                <Run Text="&#x9;&#x9;&#x9;" />  
+                            </TextBlock>
+                            </Expander.Header>
+
+                         <!-- TextBox para los síntomas -->
+                        <TextBox x:Name="tb_fases"
+                          TextWrapping="Wrap"
+                          VerticalScrollBarVisibility="Auto"
+                          IsReadOnly="True"
+                          Width="258"
+                          Height="Auto"
+                          TextAlignment="Justify"
+                          Margin="5"
+                          HorizontalScrollBarVisibility="Disabled"
+                          Text="Las fases del Alzheimer son ..." /> 
+                    </Expander>
+
                 </StackPanel>
             </TabItem>
 
