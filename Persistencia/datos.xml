@@ -29,5 +29,26 @@
 			<descripcion>En esta última fase, las personas pierden la capacidad de responder a su entorno. Pueden producirse cambios de personalidad y la comunicación se vuelve muy difícil.</descripcion>
 		</etapa>
 	</seccion>
+	
+		<seccion nombre="Tratamientos">
+			<etapa>
+				<nombre>Tratamientos actuales</nombre>
+				<descripcion>Los tratamientos actuales de la enfermedad de Alzheimer mejoran temporalmente los síntomas de pérdida de memoria y problemas con el pensamiento y el razonamiento.</descripcion>
+			</etapa>
+			<etapa>
+				<nombre>Inhibidores de la colinesterasa</nombre>
+				<descripcion>Estos tratamientos para la enfermedad de Alzheimer aumentan el rendimiento de las sustancias químicas en el cerebro que transportan información de una neurona cerebral a otra.</descripcion>
+			</etapa>
+			<etapa>
+				<nombre>Memantina (Namenda)</nombre>
+				<descripcion>Estos tratamientos para la enfermedad de Alzheimer incluyen el medicamento memantina (Namenda). Sin embargo, estos tratamientos no detienen el deterioro subyacente y la muerte de las neuronas cerebrales.</descripcion>
+			</etapa>
+			<etapa>
+				<nombre>Progresión de la enfermedad</nombre>
+				<descripcion>A medida que mueren más células, la enfermedad de Alzheimer continúa progresando.</descripcion>
+			</etapa>
+		
+	</seccion>
+
 </informacion>
 

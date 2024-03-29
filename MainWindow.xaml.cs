@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Xml;
@@ -95,9 +96,36 @@ namespace LAB_GSI
                         tb_fases.Text = "No se encontraron fases en el archivo XML.";
                     }
                 }
+                XmlNode seccionTratamientos = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Tratamientos']");
+
+                if (seccionTratamientos != null)
+                {
+                    // Obtener los elementos 'tratamiento' dentro de 'Tratamientos'
+                    XmlNodeList tratamientosNodes = seccionTratamientos.SelectNodes("etapa");
+
+                    if (tratamientosNodes != null && tratamientosNodes.Count > 0)
+                    {
+                        // Construir el texto con los tratamientos en líneas separadas
+                        string textoTratamientos = "";
+                        foreach (XmlNode tratamientoNode in tratamientosNodes)
+                        {
+                            string nombreTratamiento = tratamientoNode.SelectSingleNode("nombre").InnerText ;
+                            string descripcionTratamiento = tratamientoNode.SelectSingleNode("descripcion").InnerText;
+
+                            textoTratamientos += $"{nombreTratamiento}: {descripcionTratamiento}" + Environment.NewLine + Environment.NewLine;
+                        }
+
+                        // Mostrar los tratamientos en el TextBox tb_avances
+                        tb_avances.Text = textoTratamientos.ToString().Trim();  // Trim para quitar el espacio adicional al final
+                    }
+                    else
+                    {
+                        tb_avances.Text = "No se encontraron tratamientos en la sección 'Tratamientos' del archivo XML.";
+                    }
+                }
                 else
                 {
-                    tb_fases.Text = "Sección 'Fases' no encontrada en el archivo XML.";
+                    tb_avances.Text = "Sección 'Tratamientos' no encontrada en el archivo XML.";
                 }
             }
             catch (Exception ex)
