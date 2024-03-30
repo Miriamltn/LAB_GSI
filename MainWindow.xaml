@@ -5,25 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LAB_GSI"
         mc:Ignorable="d"
-        Title="MainWindow"  ResizeMode="NoResize" Height="450" Width="800">
+        Title="MainWindow" ResizeMode="NoResize" Height="450" Width="800">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="50*"/>
-            <ColumnDefinition Width="50*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <TabControl SelectionChanged="TabControl_SelectionChanged" Grid.ColumnSpan="2">
+        <TabControl SelectionChanged="TabControl_SelectionChanged">
             <TabControl.Background>
                 <ImageBrush Stretch="UniformToFill" ImageSource="/imagenes/fondo_prueba.jpg"/>
             </TabControl.Background>
 
             <!-- TabItem Información -->
 
-            <TabItem x:Name="PInformacion" Header="Información" Cursor="Hand">
+            <TabItem x:Name="PInformacion" Header="Información" >
                 <!-- Cambio de colores -->
                 <TabItem.Background>
                     <LinearGradientBrush EndPoint="0,1">
@@ -317,6 +316,7 @@
                         Content="Mostar Tabla de Ejercicos"
                         FontWeight="Bold"
                         Cursor="Hand"
+                        Click="AbrirTablaEjercicios"
                         BorderThickness="0" Background="#AFB5DC7E" Margin="115,344,115,0" Grid.Column="1" Height="36" VerticalAlignment="Top">
                             <Button.Template>
                                 <ControlTemplate TargetType="{x:Type Button}">
@@ -405,7 +405,7 @@
             </TabItem>
 
             <!-- Tab Recursos -->
-            <TabItem x:Name="P_Recursos" Header="Recursos" Cursor="Hand">
+            <TabItem x:Name="P_Recursos" Header="Recursos" >
                 <TabItem.Background>
                     <LinearGradientBrush EndPoint="0,1">
                         <GradientStop Color="#FFF0F0F0"/>
@@ -416,7 +416,7 @@
             </TabItem>
 
             <!-- Tab Cuidador -->
-            <TabItem x:Name="P_Cuidador" Header="Cuidador" Cursor="Hand">
+            <TabItem x:Name="P_Cuidador" Header="Cuidador">
                 <TabItem.Background>
                     <LinearGradientBrush EndPoint="0,1">
                         <GradientStop Color="#FFF0F0F0"/>
@@ -425,6 +425,19 @@
                 </TabItem.Background> />
 
             </TabItem>
+
+            <!-- Tab Asociaciones -->
+            <TabItem x:Name="P_Asociaciones" Header="Asociaciones" Cursor="Hand">
+                <TabItem.Background>
+                    <LinearGradientBrush EndPoint="0,1">
+                        <GradientStop Color="#FFF0F0F0"/>
+                        <GradientStop Color="#FFD4AF37" Offset="1"/>
+                    </LinearGradientBrush>
+                </TabItem.Background>
+
+            </TabItem>
+
+
 
         </TabControl>
     </Grid>

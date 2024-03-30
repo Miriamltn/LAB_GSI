@@ -262,5 +262,22 @@ namespace LAB_GSI
             FotoNutricion ventanaNutricion = new FotoNutricion();
             ventanaNutricion.Show();
         }
+
+        private void AbrirTablaEjercicios(object sender, RoutedEventArgs e)
+        {
+            var tablaEjercicios = new TablaEjercicios();
+
+            tablaEjercicios.Show();
+        }
+
+        /*
+         private void Abrir_Aiudo(object sender, RoutedEventArgs e)
+        {
+            string enlace = "https://aiudo.es/";
+
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+        }
+        */
+
     }
 }

@@ -17,6 +17,7 @@
         VerticalAlignment="Top" 
         Height="38"
         Width="84"
+        Cursor="Hand"
         Click="btn_empezar_Click" 
         FontWeight="Bold"
         BorderThickness="0" Background="#FFB5DC7E">
