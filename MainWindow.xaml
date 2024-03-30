@@ -192,21 +192,21 @@
                     <Grid Grid.Column="1" >
                         <StackPanel x:Name="dudas_i" Margin="0,0,400,0" Grid.Column="1" Grid.ColumnSpan="1">
 
-                            <Expander x:Name="Expander9" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" BorderBrush="#FF192841">
+                            <Expander x:Name="Expander9" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14"><Run Language="es-es" Text="Consejos sobre Nutrición"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Consejos sobre Nutrición"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel Margin="24,8,24,16" Orientation="Vertical">
                                     <TextBlock x:Name="tb_nutricion" TextWrapping="Wrap"><Run Language="es-es" Text="Definición de la enfermedad"/></TextBlock>
                                     <!-- Button fuera del TextBlock -->
-                                    <Button Content="Mostrar Imagen" Click="MostrarImagen_Click" Background="#FF7F7F" Margin="0,20,0,0" HorizontalAlignment="Center" Cursor="Hand" Width="135"/>
+                                    <Button Content="Mostrar Imagen" Click="MostrarImagen_Click" Background="#FFE0D96F" Margin="0,20,0,0" HorizontalAlignment="Center" Cursor="Hand" Width="135"/>
                                 </StackPanel>
                             </Expander>
 
 
-                            <Expander x:Name="Expander10" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
+                            <Expander x:Name="Expander10" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14"><Run Language="es-es" Text="¿Qué síntomas aparecen con esta enfermedad?"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Qué síntomas aparecen con esta enfermedad?"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
@@ -215,9 +215,9 @@
                                 </StackPanel>
                             </Expander>
 
-                            <Expander x:Name="Expander11" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24, 60" BorderBrush="#FF192841">
+                            <Expander x:Name="Expander11" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24, 60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14"><Run Language="es-es" Text="¿Qué fases presenta la enfermedad?"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Qué fases presenta la enfermedad?"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
@@ -226,9 +226,9 @@
                                 </StackPanel>
                             </Expander>
 
-                            <Expander x:Name="Expander12" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
+                            <Expander x:Name="Expander12" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14"><Run Language="es-es" Text="¿Qué avances hay en el tratamiento?"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Qué avances hay en el tratamiento?"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
@@ -242,9 +242,9 @@
                         <!-- OTRO STACKPANEL -->
                         <StackPanel x:Name="dudas_d" Grid.Column="2" Grid.ColumnSpan="2" Margin="398,0,0,0">
 
-                            <Expander x:Name="Expander13" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" BorderBrush="#FF192841">
+                            <Expander x:Name="Expander13" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" Width="326"><Run Text="¿Qué causa la enfermedad del Alzheimer?"/><Run Text=" "/><Run Language="es-es"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" Width="326" FontWeight="Bold"><Run Text="¿Qué causa la enfermedad del Alzheimer?"/><Run Text=" "/><Run Language="es-es"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
@@ -253,9 +253,9 @@
                                 </StackPanel>
                             </Expander>
 
-                            <Expander x:Name="Expander14" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
+                            <Expander x:Name="Expander14" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14"><Run Language="es-es" Text="¿Cuál es la esperanza de vida tras el diagnóstico?"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cuál es la esperanza de vida tras el diagnóstico?"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
@@ -264,9 +264,9 @@
                                 </StackPanel>
                             </Expander>
 
-                            <Expander x:Name="Expander15" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24, 60" BorderBrush="#FF192841">
+                            <Expander x:Name="Expander15" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24, 60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14"><Run Language="es-es" Text="¿Cómo actuar al saber la noticia?"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cómo actuar al saber la noticia?"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
@@ -275,9 +275,9 @@
                                 </StackPanel>
                             </Expander>
 
-                            <Expander x:Name="Expander16" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841">
+                            <Expander x:Name="Expander16" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14"><Run Text="¿Que alteraciones fisicas sufre el enfermo? "/><Run Text=" "/><Run Language="es-es"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Text="¿Que alteraciones fisicas sufre el enfermo? "/><Run Text=" "/><Run Language="es-es"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
@@ -434,10 +434,127 @@
                         <GradientStop Color="#FFD4AF37" Offset="1"/>
                     </LinearGradientBrush>
                 </TabItem.Background>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <StackPanel x:Name="asociaciones1">
+                        <Button x:Name="btn_Aiudo"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Click="AbrirAiudo"
+                            BorderThickness="0" VerticalAlignment="Top" Margin="40,60,500,0" Height="50" Width="200" HorizontalAlignment="Left">
+
+                            <Button.Background>
+                                <ImageBrush ImageSource="/imagenes/contratar_cuidadoras.png" Stretch="UniformToFill"/>
+                            </Button.Background>
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="btn_FundacionEspañola"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Click="AbrirFundacionEspañola"
+                            BorderThickness="0" VerticalAlignment="Top" Margin="40,60,500,0" Height="50" Width="200" HorizontalAlignment="Left">
+
+                            <Button.Background>
+                                <ImageBrush ImageSource="/imagenes/fundacionAlzheimerEspaña.jpg" Stretch="Fill"/>
+                            </Button.Background>
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="btn_Confederacion"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Click="AbrirConfederacion"
+                            BorderThickness="0" VerticalAlignment="Top" Margin="40,60,500,0" Height="50" HorizontalAlignment="Left" Width="200">
+
+                            <Button.Background>
+                                <ImageBrush ImageSource="/imagenes/confederacion.png" Stretch="Fill"/>
+                            </Button.Background>
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                    </StackPanel>
+                    <StackPanel x:Name="asociaciones2" Margin="397,-4,0,3">
+                        <Button x:Name="btn_Asociacion"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Click="AbrirAsociacion"
+                            BorderThickness="0" Height="50" Margin="20,60,70,0" Width="200" HorizontalAlignment="Right">
+
+                            <Button.Background>
+                                <ImageBrush ImageSource="/imagenes/asociacion.png" Stretch="Fill"/>
+                            </Button.Background>
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="btn_ASPE"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Click="AbrirASPE"
+                            BorderThickness="0" Height="50" Margin="20,60,70,0" Width="200" HorizontalAlignment="Right">
+
+                            <Button.Background>
+                                <ImageBrush ImageSource="/imagenes/guiaAsociaciones.png" Stretch="Fill"/>
+                            </Button.Background>
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+
+                        <Button x:Name="btn_donativos"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            Click="AbrirDonativos"
+                            BorderThickness="0" Height="50" Margin="20,60,70,0" HorizontalAlignment="Right" Width="200">
+
+                            <Button.Background>
+                                <ImageBrush ImageSource="/imagenes/funcacion.png" Stretch="Fill"/>
+                            </Button.Background>
+                            <Button.Template>
+                                <ControlTemplate TargetType="{x:Type Button}">
+                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                    </Border>
+                                </ControlTemplate>
+                            </Button.Template>
+                        </Button>
+                    </StackPanel>
+
+                </Grid>
+
 
             </TabItem>
-
-
 
         </TabControl>
     </Grid>

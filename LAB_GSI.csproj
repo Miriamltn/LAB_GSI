@@ -139,5 +139,17 @@
   <ItemGroup>
     <Resource Include="imagenes\funcacion.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\fundacionAlzheimerEspaña.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\confederacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\asociacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\guiaAsociaciones.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

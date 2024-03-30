@@ -270,14 +270,48 @@ namespace LAB_GSI
             tablaEjercicios.Show();
         }
 
-        /*
-         private void Abrir_Aiudo(object sender, RoutedEventArgs e)
+        // Metodos para abrir los links de las asociaciones 
+
+        private void AbrirAiudo(object sender, RoutedEventArgs e)
         {
             string enlace = "https://aiudo.es/";
 
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
         }
-        */
 
+        private void AbrirFundacionEspañola(object sender, RoutedEventArgs e)
+        {
+            string enlace = "https://alzfae.org/";
+
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+        }
+
+        private void AbrirConfederacion(object sender, RoutedEventArgs e)
+        {
+            string enlace = "https://www.ceafa.es/es";
+
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+        }
+
+        private void AbrirAsociacion(object sender, RoutedEventArgs e)
+        {
+            string enlace = "https://www.alz.org/?lang=es-MX";
+
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+        }
+
+        private void AbrirASPE(object sender, RoutedEventArgs e)
+        {
+            string enlace = "https://asociaciones.aspe.es/asociacion/aspe-contra-el-alzheimer/";
+
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+        }
+        
+                private void AbrirDonativos(object sender, RoutedEventArgs e)
+        {
+            string enlace = "https://fpmaragall.org/donativos/";
+
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+        }
     }
 }
