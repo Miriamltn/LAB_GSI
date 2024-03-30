@@ -48,10 +48,9 @@
 				<descripcion>A medida que mueren más células, la enfermedad de Alzheimer continúa progresando.</descripcion>
 			</etapa>
 	</seccion>
-	
-	<seccion nombre="Nutricion">
-		<informacion>
-			<texto>Las personas con enfermedad de Alzheimer pueden presentar dificultades para la ingesta de alimentos y, en consecuencia, su correcta nutrición. Algunos de los más comunes son: </texto>
+
+		<seccion nombre="Nutricion">
+			<texto>Las personas con enfermedad de Alzheimer pueden presentar dificultades para la ingesta de alimentos y, en consecuencia, su correcta nutrición. Algunos de los más comunes son:</texto>
 			<item>Sequedad bucal.</item>
 			<item>Alteraciones en la masticación o deglución.</item>
 			<item>Anorexia (falta de apetito).</item>
@@ -59,10 +58,16 @@
 			<item>Alteración o deterioro del gusto.</item>
 			<texto>Además, debido a la propia pérdida de memoria, si no cuenta con una estrecha supervisión, es habitual que la persona con Alzheimer caiga en la monotonía de llevar una alimentación poco variada, repetir muchas comidas u olvidarse de comer. Desde las fases iniciales de la enfermedad, es frecuente que las personas afectadas bajen de peso de forma significativa y no intencionada.</texto>
 			<texto>Por todo ello, las recomendaciones de nutrición para las personas con Alzheimer suelen ir enfocadas a asegurar un aporte calórico y nutricional adecuado para evitar la pérdida de peso y prevenir la desnutrición.</texto>
-		</informacion>
-	</seccion>
+			<texto>Algunos consejos para la hora de comer son:</texto>
+			<item>Durante las comidas, es importante tener la espalda recta para facilitar la ingesta.</item>
+			<item>Respetar los horarios de las comidas.</item>
+			<item>Realizar tentempiés entre las comidas principales, muy nutritivas y poco abundantes.</item>
+			<item>Comer sin prisas en un ambiente relajado y sin distracciones.</item>
+			<item>Escoger alimentos fáciles de masticar y tragar. Además, intentar priorizar aquellos alimentos que le gusten y darlos con distintos tipos de preparaciones.</item>
+		</seccion>
 
-	<seccion nombre="Aceptación de la enfermedad">
+
+	<seccion nombre="Aceptacion de la enfermedad">
 		<texto>Para poder aceptar la enfermedad de Alzheimer, y reducir su impacto en la vida de la persona cuidadora y en el entorno familiar, es importante conocer qué es el Alzheimer y qué le sucede a la persona afectada. También lo es el hecho de comprender que las alteraciones que sufre en su cerebro son la causa de los cambios en su comportamiento, conducta y reacciones.
 		
 Resulta clave, pues, comprender que preguntar reiteradamente lo mismo, no reconocer a algún conocido o negar algún error que ha cometido son síntomas del Alzheimer. No son reacciones egoístas o actos realizados a propósito para enojar o fastidiar a quien le cuida.

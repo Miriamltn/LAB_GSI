@@ -55,9 +55,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FotoNutricion.xaml.cs">
+      <DependentUpon>FotoNutricion.xaml</DependentUpon>
+    </Compile>
     <Compile Include="VentanaInicio.xaml.cs">
       <DependentUpon>VentanaInicio.xaml</DependentUpon>
     </Compile>
+    <Page Include="FotoNutricion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -109,6 +116,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imagenes\fondoInicio.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\fondo_prueba.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\tabla_nutricion.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\tabla de ejercicios.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
