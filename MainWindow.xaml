@@ -15,7 +15,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <TabControl SelectionChanged="TabControl_SelectionChanged">
+        <TabControl SelectionChanged="TabControl_SelectionChanged" Margin="-1.2,0,0,0">
             <TabControl.Background>
                 <ImageBrush Stretch="UniformToFill" ImageSource="/imagenes/fondo_prueba.jpg"/>
             </TabControl.Background>
@@ -23,7 +23,6 @@
             <!-- TabItem Información -->
 
             <TabItem x:Name="PInformacion" Header="Información" >
-                <!-- Cambio de colores -->
                 <TabItem.Background>
                     <LinearGradientBrush EndPoint="0,1">
                         <GradientStop Color="#FFF0F0F0"/>
@@ -107,7 +106,6 @@
 
                         </StackPanel>
 
-                        <!-- OTRO STACKPANEL -->
                         <StackPanel x:Name="segundo" Grid.Column="2" Grid.ColumnSpan="2" Margin="398,0,0,0">
 
                             <Expander x:Name="Expander5" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,40,24,60" BorderBrush="#FF192841" Background="#406B8E23">
@@ -197,8 +195,9 @@
                                     <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Consejos sobre Nutrición"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel Margin="24,8,24,16" Orientation="Vertical">
-                                    <TextBlock x:Name="tb_nutricion" TextWrapping="Wrap"><Run Language="es-es" Text="Definición de la enfermedad"/></TextBlock>
-                                    <!-- Button fuera del TextBlock -->
+                                    <TextBlock x:Name="tb_nutricion" TextWrapping="Wrap">
+                                        <Run Language="es-es" Text="Definición de la enfermedad"/>
+                                    </TextBlock>
                                     <Button Content="Mostrar Imagen" Click="MostrarImagen_Click" Background="#FFE0D96F" Margin="0,20,0,0" HorizontalAlignment="Center" Cursor="Hand" Width="135"/>
                                 </StackPanel>
                             </Expander>
@@ -239,7 +238,6 @@
 
                         </StackPanel>
 
-                        <!-- OTRO STACKPANEL -->
                         <StackPanel x:Name="dudas_d" Grid.Column="2" Grid.ColumnSpan="2" Margin="398,0,0,0">
 
                             <Expander x:Name="Expander13" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" BorderBrush="#FF192841" Background="#40FF1818">
@@ -412,6 +410,157 @@
                         <GradientStop Color="#FFD4AF37" Offset="1"/>
                     </LinearGradientBrush>
                 </TabItem.Background>
+                <Grid>
+                    <ScrollViewer x:Name="Informacion_extra" Margin="-3,0,397,0">
+
+                        <Grid Grid.Column="1" >
+
+                            <StackPanel x:Name="primero1" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
+
+                                <Expander x:Name="Expander21" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Afasia"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_afasia" TextWrapping="Wrap"><Run Language="es-es" Text="Definición de la enfermedad"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+
+                                <Expander x:Name="Expander22" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#60582040">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Anomia"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_anomia" TextWrapping="Wrap"><Run Language="es-es" Text="Def anomia"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+
+                                <Expander x:Name="Expander23" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24, 60" BorderBrush="#FF192841" Background="#60582040
+                                      ">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Cuidador principal"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tab_cuidador_principal" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+
+                                <Expander x:Name="Expander24" Expanded="Expander_Expanded" Margin="24,8,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Delirio"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_delirio" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+                                <Expander x:Name="Expander25" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316" Margin="24,8,24,60">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Grupo de apoyo mutuo"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_grupo_apoyo_mutuo" TextWrapping="Wrap"><Run Language="es-es" Text="Definición"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+                                <Expander x:Name="Expander26" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Parafasia"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tbparafasia" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+                                <Expander x:Name="Expander27" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Respiro"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tab_respiro" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+                                <Expander x:Name="Expander28" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Úlcera"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_ulcera" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+
+                            </StackPanel>
+                        </Grid>
+                    </ScrollViewer>
+                    <ScrollViewer x:Name="Biblioteca" Margin="399,0,-1,0">
+
+                        <Grid Grid.Column="1" >
+
+                            <StackPanel x:Name="primero2" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
+
+                                <Expander x:Name="Expander29" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Las amapolas del olvido"/>
+                                    </Expander.Header>
+                                    <StackPanel
+                                        Margin="24,8,24,16"
+                                        Orientation="Vertical">
+                                        <Image x:Name="image" Height="126" Width="92" Source="/imagenes/amapolas.jpg"/>
+                                    </StackPanel>
+                                </Expander>
+
+                                <Expander x:Name="Expander30" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#60582040">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="El día menos pensado"/>
+                                    </Expander.Header>
+                                    <StackPanel
+                                        Margin="24,8,24,16"
+                                        Orientation="Vertical">
+                                        <Image x:Name="image1" Height="100" Width="100" Source="/imagenes/libro2.jpg"/>
+                                    </StackPanel>
+                                </Expander>
+
+                                <Expander x:Name="Expander31" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24, 60" BorderBrush="#FF192841" Background="#60582040                                       ">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Siempre Alice"/>
+                                    </Expander.Header>
+                                    <StackPanel
+                                        Margin="24,8,24,16"
+                                        Orientation="Vertical">
+                                        <Image x:Name="image2" Height="100" Width="100" Source="/imagenes/libro3.jpg"/>
+                                    </StackPanel>
+                                </Expander>
+
+                                <Expander x:Name="Expander32" Expanded="Expander_Expanded" Margin="24,8,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Text="Vitaminas para no olvidar"/><LineBreak/><Run/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                        Margin="24,8,24,16"
+                                        Orientation="Vertical">
+                                        <Image x:Name="image3" Height="100" Width="100" Source="/imagenes/libro4.jpg"/>
+                                    </StackPanel>
+                                </Expander>
+
+
+                            </StackPanel>
+                        </Grid>
+                    </ScrollViewer>
+
+                </Grid>
 
             </TabItem>
 
@@ -555,6 +704,7 @@
 
 
             </TabItem>
+
 
         </TabControl>
     </Grid>

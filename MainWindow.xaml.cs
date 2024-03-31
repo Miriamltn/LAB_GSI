@@ -235,7 +235,10 @@ namespace LAB_GSI
             Expander expanded = sender as Expander;
 
             // Crea una lista con todos tus Expanders
-            List<Expander> allExpanders = new List<Expander> { Expander1, Expander2, Expander3, Expander4, Expander5, Expander6, Expander6, Expander8, Expander9, Expander17, Expander18, Expander19, Expander20 };
+            List<Expander> allExpanders = new List<Expander> { Expander1, Expander2, Expander3, Expander4, Expander5, 
+                Expander6, Expander6, Expander8, Expander9,Expander10, Expander11, Expander12, Expander13, 
+                Expander14, Expander15, Expander16, Expander17, Expander18, Expander19, Expander20, Expander21, Expander22, 
+                Expander23, Expander24, Expander25, Expander26, Expander27, Expander28, Expander29, Expander30, Expander31, Expander32 };
 
             // Cierra todos los Expanders excepto el que se expandió
             foreach (Expander expander in allExpanders)
@@ -248,7 +251,7 @@ namespace LAB_GSI
         }
 
 
-        // Metodo para iniciar el video de youtube
+        // Metodo para iniciar links
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             string enlaceYouTube = "https://www.youtube.com/watch?v=hIOWIJYVtXg";
@@ -307,11 +310,45 @@ namespace LAB_GSI
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
         }
         
-                private void AbrirDonativos(object sender, RoutedEventArgs e)
+        private void AbrirDonativos(object sender, RoutedEventArgs e)
         {
             string enlace = "https://fpmaragall.org/donativos/";
 
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+        }
+
+        // Para abrir los links de los libros 
+        private void AbrirLibro1(object sender, RoutedEventArgs e)
+        {
+            string enlace = "https://www.casadellibro.com/libro-pe-las-amapolas-del-olvido-un-hogar-tres-generaciones-y-un-viaje-al-alzheimer/9788484609797/1841214";
+
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+        }
+
+        private void AbrirLibro2(object sender, RoutedEventArgs e)
+        {
+            string enlace = "https://www.casadellibro.com/ebook-el-dia-menos-pensado-ebook/9789877389227/12998490";
+
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+        }
+
+        private void AbrirLibro3(object sender, RoutedEventArgs e)
+        {
+            string enlace = "https://www.casadellibro.com/ebook-siempre-alice-ebook/9788490199954/2661461";
+
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+        }
+
+        private void AbrirLibro4(object sender, RoutedEventArgs e)
+        {
+            string enlace = "https://www.casadellibro.com/ebook-vitaminas-para-no-olvidar-ebook/9786070752452/7689615";
+
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+        }
+
+        private void AbrirLibro1(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        {
+
         }
     }
 }
