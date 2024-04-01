@@ -93,5 +93,89 @@ Además, estos efectos pueden derivar en otros problemas de salud como fracturas
 		</texto>
 	</seccion>
 
+	<seccion nombre="Consejos de Cuidados Básicos">
+		<etapa>
+			<nombre>Organice el espacio vital de su casa</nombre>
+			<item>Es recomendable quitar o fijar al suelo alfombras y felpudos (baño y dormitorio)</item>
+			<item>Si tiene escaleras, fije bandas antideslizantes sobre el borde.</item>
+			<item>Asegúrese de que las habitaciones tengan buena iluminación durante el día y noche</item>
+			<item>No le deje coger pequeños objetos (agujas, botones...) que pueda tragar.</item>
+			<item>Póngale una pulsera o una medalla donde figure su nombre, dirección y teléfono.</item>
+		</etapa>
+		<etapa>
+			<nombre>Organización del dormitorio</nombre>
+			<item>Fije al suelo la alfombra de pie de cama.</item>
+			<item>Instale un piloto de luz que permanezca encendido durante la noche.</item>
+			<item>Se pueden colocar bandas luminiscentes que señalen el camino de la habitación al WC para que no se pierda si tiene que levantarse por la noche.</item>
+		</etapa>
+		<etapa>
+			<nombre>Ropa</nombre>
+			<item>En el armario, debe guardar solamente la ropa indispensable de la estación del año correspondiente.</item>
+			<item>Evite que elija, escoja usted por él.</item>
+			<item>Elija ropa que sea fácil de poner y quitar: cierres de velcro, polos cerrados…</item>
+			<item>Identifique la ropa de los cajones y armarios con pequeños carteles o dibujos</item>
+		</etapa>
+		<etapa>
+			<nombre>Otros</nombre>
+			<item>Quite o recubra los espejos. ya que puede no reconocerse y producirle angustia</item>
+			<item>Coloque un reloj grande para ver con facilidad y un calendario en el que pueda marcar los días.</item>
+			<item>Evite el ruido y la confusión.</item>
+		</etapa>
+	</seccion>
+
+	<seccion nombre="Consejos básicos sobre comunicacion">
+		<etapa>
+			<nombre>Para conectar en la comunicación</nombre>
+			<item>Hacer contacto visual para obtener su atención y llamar a la persona por su nombre.</item>
+			<item>Ser consciente de tu propio tono de voz, mirada y de tu “lenguaje corporal”.</item>
+			<item>Promover una conversación interactiva por el mayor tiempo posible.</item>
+			<item>Usar algún otro método que no sea hablar como tocar a la persona para guiarla.</item>
+			<item>Si la comunicación crea problemas, tratar de distraer al enfermo.</item>
+			<item>Repetir las instrucciones y no interrumpirle cuando hable.</item>
+			<item>No hablar a la persona usando un lenguaje o una voz infantil.</item>
+			<item>Hacer preguntas que requieren una respuesta de sí o no.</item>
+			<item>Tratar de no decir, “¿No se acuerda?” o “Yo le dije”.</item>
+		</etapa>
+		<etapa>
+			<nombre>Para animar al enfermo</nombre>
+			<item>Tomar la mano de la persona cuando le hable y hablar de forma cariñosa.</item>
+			<item>Escuchar las preocupaciones de la persona, aún cuando sea difícil entender lo que dice.</item>
+			<item>Dejar que la persona tome decisiones y permanezca involucrada.</item>
+			<item>Ser paciente cuando la persona se enoje.</item>
+		</etapa>
+	</seccion>
+	
+	<seccion nombre="Consejos de recursos legales">
+		<etapa>
+			<nombre>Poderes generales preventivos</nombre>
+			<item>Designan a una o varias personas o institución para que actúe representando los propios intereses.</item>
+			<item>Es importante realizar este trámite antes de que aparezcan los síntomas que impiden realizarlo.</item>
+			<item>Eso simplificará las cosas, abaratará costes de representación jurídica y será de gran ayuda en el caso de la discapacidad.</item>
+		</etapa>
+		<etapa>
+			<nombre>La asistencia o la autocuratela</nombre>
+			<item>Es un documento que sirve para nombrar o excluir personas o instituciones para determinar quién queremos que nos asista, tanto por situaciones personales como patrimoniales.</item>
+			<item>Como la decisión ha sido tomada por la propia persona afectada, se podrán evitar ciertos conflictos familiares.</item>
+		</etapa>
+		<etapa>
+			<nombre>El testamento vital</nombre>
+			<item>Este documento permite a la persona decidir, entre otras cosas, si en un futuro quiere aceptar o rechazar determinados procedimientos terapéuticos o solicitar la aplicación de la eutanasia, si se dan los requisitos legales para ello.</item>
+			<item>También nos sirve para designar a un interlocutor con el personal médico si ya no podemos expresar nuestra voluntad por nosotros mismos.</item>
+		</etapa>
+		<etapa>
+			<nombre>El testamento</nombre>
+			<item>Podremos decidir sobre nuestros bienes materiales.</item>
+			<item>Debemos hacerlo antes de que nos sobrevenga cualquier enfermedad o accidente que pueda mermar nuestra capacidad cognitiva para hacerlo.</item>
+			<item>Esto servirá para decidir sobre el destino de nuestros bienes, porque si no lo hacemos, la ley lo hará por nosotros.</item>
+		</etapa>
+		<etapa>
+			<nombre>La curatela</nombre>
+			<item>Cuando una persona se encuentra en una situación de necesidad de apoyo continuado porque no alcanza a comprender su alrededor por sufrir una enfermedad psíquica invalidante.</item>
+			<item>El juez nombrará un curador de la persona enferma.</item>
+			<item>La resolución judicial determinará la extensión, los límites y el control de la intervención del curador. En toda curatela, el curador queda siempre bajo la vigilancia del fiscal y el control del juez, a quien debe rendir cuentas periódicamente.</item>
+		</etapa>
+	</seccion>
+
+
 </informacion>
 

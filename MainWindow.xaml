@@ -205,34 +205,34 @@
 
                             <Expander x:Name="Expander10" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Qué síntomas aparecen con esta enfermedad?"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Consejos sobre cuidados básicos"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_sintomas1" TextWrapping="Wrap"><Run Language="es-es" Text="Síntomas de la enfermedad"/></TextBlock>
+                                    <TextBlock x:Name="tb_cuidadosBasicos" TextWrapping="Wrap"><Run Language="es-es" Text="Síntomas de la enfermedad"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
                             <Expander x:Name="Expander11" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24, 60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Qué fases presenta la enfermedad?"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Consejos sobre comunicación"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_fases1" TextWrapping="Wrap"><Run Language="es-es" Text="Son 3 fases"/></TextBlock>
+                                    <TextBlock x:Name="tb_comunicacion" TextWrapping="Wrap"><Run Language="es-es" Text="Son 3 fases"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
                             <Expander x:Name="Expander12" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Qué avances hay en el tratamiento?"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Consejos sobre salud"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_avances1" TextWrapping="Wrap"><Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/></TextBlock>
+                                    <TextBlock x:Name="tb_salud" TextWrapping="Wrap"><Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
@@ -242,18 +242,18 @@
 
                             <Expander x:Name="Expander13" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" Width="326" FontWeight="Bold"><Run Text="¿Qué causa la enfermedad del Alzheimer?"/><Run Text=" "/><Run Language="es-es"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" Width="326" FontWeight="Bold"><Run Text="Consejos sobre enfermería"/><Run Text=" "/><Run Language="es-es"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_causas1" TextWrapping="Wrap"><Run Language="es-es" Text="Deficits"/></TextBlock>
+                                    <TextBlock x:Name="tb_enfermería" TextWrapping="Wrap"><Run Language="es-es" Text="Deficits"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
                             <Expander x:Name="Expander14" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cuál es la esperanza de vida tras el diagnóstico?"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Consejos sobre vivienda"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
@@ -264,7 +264,7 @@
 
                             <Expander x:Name="Expander15" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24, 60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cómo actuar al saber la noticia?"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Consejos en el ejercicio"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
@@ -275,12 +275,12 @@
 
                             <Expander x:Name="Expander16" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Text="¿Que alteraciones fisicas sufre el enfermo? "/><Run Text=" "/><Run Language="es-es"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Text="Consejos sobre recursos legales "/><Run Text=" "/><Run Language="es-es"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_fisicas1" TextWrapping="Wrap"><Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/></TextBlock>
+                                    <TextBlock x:Name="tb_legal" TextWrapping="Wrap"><Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
@@ -291,7 +291,7 @@
 
 
             <!-- Tab Rutinas -->
-            <TabItem x:Name="P_Rutinas" Header="Rutinas" Cursor="Hand">
+            <TabItem x:Name="P_Rutinas" Header="Rutinas" Cursor="Hand" Margin="2,-2,-2,0">
                 <TabItem.Background>
                     <LinearGradientBrush EndPoint="0,1">
                         <GradientStop Color="#FFF0F0F0"/>

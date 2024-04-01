@@ -201,6 +201,122 @@ namespace LAB_GSI
                 {
                     tb_Esperanza.Text = "Sección 'Esperanza de vida' no encontrada en el archivo XML.";
                 }
+                XmlNode seccionCuidadosBasicos = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Consejos de Cuidados Básicos']");
+                if (seccionCuidadosBasicos != null)
+                {
+                    XmlNodeList etapasNodes = seccionCuidadosBasicos.SelectNodes("etapa");
+
+                    if (etapasNodes != null && etapasNodes.Count > 0)
+                    {
+                        StringBuilder textoCuidadosBasicos = new StringBuilder();
+                        foreach (XmlNode etapaNode in etapasNodes)
+                        {
+                            string nombreEtapa = etapaNode.SelectSingleNode("nombre").InnerText;
+                            textoCuidadosBasicos.AppendLine($"{nombreEtapa}:");
+
+                            XmlNodeList itemNodes = etapaNode.SelectNodes("item");
+                            if (itemNodes != null && itemNodes.Count > 0)
+                            {
+                                foreach (XmlNode itemNode in itemNodes)
+                                {
+                                    textoCuidadosBasicos.AppendLine($"- {itemNode.InnerText.Trim()}");
+                                }
+                            }
+
+                            textoCuidadosBasicos.AppendLine(); // Línea en blanco entre etapas
+                        }
+
+                        tb_cuidadosBasicos.Text = textoCuidadosBasicos.ToString().Trim();
+                    }
+                    else
+                    {
+                        tb_cuidadosBasicos.Text = "No se encontraron etapas de cuidados básicos en el archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_cuidadosBasicos.Text = "Sección 'Consejos de Cuidados Básicos' no encontrada en el archivo XML.";
+                }
+                XmlNode seccionComunicacion = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Consejos básicos sobre comunicacion']");
+
+                if (seccionComunicacion != null)
+                {
+                    XmlNodeList etapasNodes = seccionComunicacion.SelectNodes("etapa");
+
+                    if (etapasNodes != null && etapasNodes.Count > 0)
+                    {
+                        StringBuilder textoComunicacion = new StringBuilder();
+                        foreach (XmlNode etapaNode in etapasNodes)
+                        {
+                            string nombreEtapa = etapaNode.SelectSingleNode("nombre").InnerText;
+                            textoComunicacion.AppendLine($"{nombreEtapa}:");
+
+                            XmlNodeList items = etapaNode.SelectNodes("item");
+                            if (items != null && items.Count > 0)
+                            {
+                                foreach (XmlNode itemNode in items)
+                                {
+                                    textoComunicacion.AppendLine($"- {itemNode.InnerText.Trim()}");
+                                }
+                            }
+
+                            textoComunicacion.AppendLine();
+                        }
+
+                        tb_comunicacion.Text = textoComunicacion.ToString().Trim();
+                    }
+                    else
+                    {
+                        tb_comunicacion.Text = "No se encontró la información sobre comunicación en el archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_comunicacion.Text = "Sección 'Consejos básicos sobre comunicacion' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionRecursosLegales = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Consejos de recursos legales']");
+
+                if (seccionRecursosLegales != null)
+                {
+                    // Obtener todas las etapas dentro de la sección
+                    XmlNodeList etapasNodes = seccionRecursosLegales.SelectNodes("etapa");
+
+                    if (etapasNodes != null && etapasNodes.Count > 0)
+                    {
+                        // Construir el texto con las etapas y sus items
+                        StringBuilder textoRecursosLegales = new StringBuilder();
+                        foreach (XmlNode etapaNode in etapasNodes)
+                        {
+                            string nombreEtapa = etapaNode.SelectSingleNode("nombre").InnerText;
+                            textoRecursosLegales.AppendLine($"## {nombreEtapa}:");
+
+                            // Obtener los elementos 'item' dentro de la etapa
+                            XmlNodeList itemsNodes = etapaNode.SelectNodes("item");
+
+                            if (itemsNodes != null && itemsNodes.Count > 0)
+                            {
+                                foreach (XmlNode itemNode in itemsNodes)
+                                {
+                                    textoRecursosLegales.AppendLine($"- {itemNode.InnerText.Trim()}");
+                                }
+                            }
+                        }
+
+                        // Mostrar el texto en el TextBlock tb_legal
+                        tb_legal.Text = textoRecursosLegales.ToString().Trim();
+                    }
+                    else
+                    {
+                        tb_legal.Text = "No se encontraron etapas en la sección 'Consejos de recursos legales' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_legal.Text = "Sección 'Consejos de recursos legales' no encontrada en el archivo XML.";
+                }
+
+
             }
             catch (Exception ex)
             {
