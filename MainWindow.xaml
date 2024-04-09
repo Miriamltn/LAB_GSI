@@ -227,12 +227,12 @@
 
                             <Expander x:Name="Expander12" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Consejos sobre salud"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Consejos sobre ducha"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_salud" TextWrapping="Wrap"><Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/></TextBlock>
+                                    <TextBlock x:Name="tb_ducha" TextWrapping="Wrap"><Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
@@ -253,12 +253,12 @@
 
                             <Expander x:Name="Expander14" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#40FF1818">
                                 <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Consejos sobre vivienda"/></TextBlock>
+                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Consejos sobre salud"/></TextBlock>
                                 </Expander.Header>
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_Esperanza1" TextWrapping="Wrap"><Run Language="es-es" Text="Síntomas de la enfermedad"/></TextBlock>
+                                    <TextBlock x:Name="tb_salud" TextWrapping="Wrap"><Run Language="es-es" Text="Síntomas de la enfermedad"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 

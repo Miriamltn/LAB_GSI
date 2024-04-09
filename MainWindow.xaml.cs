@@ -386,6 +386,60 @@ namespace LAB_GSI
                     tb_ejercicioDudas.Text = "Sección 'EjercicioDudas' no encontrada en el archivo XML.";
                 }
 
+                XmlNode seccionCuidadosBano = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Ducha']");
+
+                if (seccionCuidadosBano != null)
+                {
+                    XmlNodeList etapasNodes = seccionCuidadosBano.SelectNodes("etapa");
+
+                    if (etapasNodes != null && etapasNodes.Count > 0)
+                    {
+                        StringBuilder textoCuidadosBano = new StringBuilder();
+                        foreach (XmlNode etapaNode in etapasNodes)
+                        {
+                            textoCuidadosBano.AppendLine(etapaNode.InnerText.Trim());
+                            textoCuidadosBano.AppendLine();
+                        }
+
+                        tb_ducha.Text = textoCuidadosBano.ToString().Trim();
+                    }
+                    else
+                    {
+                        tb_ducha.Text = "No se encontraron etapas en la sección 'CuidadosBano' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_ducha.Text = "Sección 'CuidadosBano' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionApoyoEmocional = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Salud']");
+
+                if (seccionApoyoEmocional != null)
+                {
+                    XmlNodeList etapasNodes = seccionApoyoEmocional.SelectNodes("etapa");
+
+                    if (etapasNodes != null && etapasNodes.Count > 0)
+                    {
+                        StringBuilder textoApoyoEmocional = new StringBuilder();
+                        foreach (XmlNode etapaNode in etapasNodes)
+                        {
+                            textoApoyoEmocional.AppendLine(etapaNode.InnerText.Trim());
+                            textoApoyoEmocional.AppendLine();
+                        }
+
+                        tb_salud.Text = textoApoyoEmocional.ToString().Trim();
+                    }
+                    else
+                    {
+                        tb_salud.Text = "No se encontraron etapas en la sección 'ApoyoEmocional' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_salud.Text = "Sección 'ApoyoEmocional' no encontrada en el archivo XML.";
+                }
+
             }
             catch (Exception ex)
             {
@@ -399,6 +453,7 @@ namespace LAB_GSI
                 tb_causas.Text = "Error al cargar los datos desde el archivo XML: " + ex.Message;
                 tb_Esperanza.Text = "Error al cargar los datos desde el archivo XML: " + ex.Message;
                 tb_enfermeria.Text = "Error al cargar los datos desde el archivo XML " + ex.Message;
+                tb_ducha.Text = "Error al cargar los datos desde el archivo XML" + ex.Message; 
             }
         }
 
