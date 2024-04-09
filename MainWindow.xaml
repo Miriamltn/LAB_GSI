@@ -15,7 +15,7 @@
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
 
-        <TabControl SelectionChanged="TabControl_SelectionChanged" Margin="-1.2,0,0,0">
+        <TabControl SelectionChanged="TabControl_SelectionChanged">
             <TabControl.Background>
                 <ImageBrush Stretch="UniformToFill" ImageSource="/imagenes/fondo_prueba.jpg"/>
             </TabControl.Background>
@@ -291,7 +291,7 @@
 
 
             <!-- Tab Rutinas -->
-            <TabItem x:Name="P_Rutinas" Header="Rutinas" Cursor="Hand" Margin="2,-2,-2,0">
+            <TabItem x:Name="P_Rutinas" Header="Rutinas" Cursor="Hand">
                 <TabItem.Background>
                     <LinearGradientBrush EndPoint="0,1">
                         <GradientStop Color="#FFF0F0F0"/>
@@ -566,17 +566,173 @@
 
             <!-- Tab Cuidador -->
             <TabItem x:Name="P_Cuidador" Header="Cuidador">
+
                 <TabItem.Background>
                     <LinearGradientBrush EndPoint="0,1">
                         <GradientStop Color="#FFF0F0F0"/>
                         <GradientStop Color="#FFD4AF37" Offset="1"/>
                     </LinearGradientBrush>
-                </TabItem.Background> />
+                </TabItem.Background>
+                
+                <Grid>
+                    <ScrollViewer x:Name="Informacion_cuidador" Margin="-3,0,397,0">
+
+                        <Grid Grid.Column="1" >
+
+                            <StackPanel x:Name="Dudas" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
+
+                                <Expander x:Name="Expander33" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Qué papel desempeña en la familia en el momento del diagnóstico de la enfermedad?"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_afasia1" TextWrapping="Wrap"><Run Language="es-es" Text="Definición de la enfermedad"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+
+                                <Expander x:Name="Expander34" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#60582040">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Tras el diagnóstico, ¿cómo se puede afrontar la nueva realidad?"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_anomia1" TextWrapping="Wrap"><Run Language="es-es" Text="Def anomia"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+
+                                <Expander x:Name="Expander35" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24, 60" BorderBrush="#FF192841" Background="#60582040                                       ">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Es importante que exista una buena comunicación entre el médico de cabecera y la familia?"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tab_cuidador_principal1" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+
+                                <Expander x:Name="Expander36" Expanded="Expander_Expanded" Margin="24,8,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cómo me puedo anticipar a las dificultades que pueden surgir con el avance de la enfermedad?"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_delirio1" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+                                <Expander x:Name="Expander37" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316" Margin="24,8,24,60">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿De qué depende el éxito en el cuidado de un familiar con demencia?"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_grupo_apoyo_mutuo1" TextWrapping="Wrap"><Run Language="es-es" Text="Definición"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+                                <Expander x:Name="Expander38" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cuál es el perfil del cuidador principal?"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tbparafasia1" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+                                <Expander x:Name="Expander39" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Qué implica ser el cuidador principal?"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tab_respiro1" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+                                <Expander x:Name="Expander40" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cuáles son las ventajas de que exista un cuidador principal en la familia?"/></TextBlock>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_ulcera1" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+
+                            </StackPanel>
+                        </Grid>
+                    </ScrollViewer>
+                    <ScrollViewer x:Name="Consejos" Margin="399,0,-1,0">
+
+                        <Grid Grid.Column="1" >
+
+                            <StackPanel x:Name="primero4" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
+
+                                <Expander x:Name="Expander41" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Te puedes equivocar"/>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_equivocarse" TextWrapping="Wrap"><Run Language="es-es" Text="TE PUEDES EQUIVOCAR"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+
+
+                                <Expander x:Name="Expander42" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="No te pares"/>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_no_pares" TextWrapping="Wrap"><Run Language="es-es" Text="NO TE PARES"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+
+                                <Expander x:Name="Expander43" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="No pierdad el sentido del humor"/>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_humor" TextWrapping="Wrap"><Run Language="es-es" Text="No pierdad el sentido del humor"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+
+                                <Expander x:Name="Expander44" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
+                                    <Expander.Header>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Déjate ayudar"/>
+                                    </Expander.Header>
+                                    <StackPanel
+                                    Margin="24,8,24,16"
+                                    Orientation="Vertical">
+                                        <TextBlock x:Name="tb_dejate_ayudar" TextWrapping="Wrap"><Run Language="es-es" Text="Déjate ayudar"/></TextBlock>
+                                    </StackPanel>
+                                </Expander>
+
+
+                            </StackPanel>
+                        </Grid>
+                    </ScrollViewer>
+
+                </Grid>
+
+
 
             </TabItem>
 
             <!-- Tab Asociaciones -->
             <TabItem x:Name="P_Asociaciones" Header="Asociaciones" Cursor="Hand">
+
                 <TabItem.Background>
                     <LinearGradientBrush EndPoint="0,1">
                         <GradientStop Color="#FFF0F0F0"/>
