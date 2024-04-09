@@ -247,7 +247,7 @@
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_enfermería" TextWrapping="Wrap"><Run Language="es-es" Text="Deficits"/></TextBlock>
+                                    <TextBlock x:Name="tb_enfermeria" TextWrapping="Wrap"><Run Language="es-es" Text="Deficits"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
@@ -269,7 +269,7 @@
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_comoActuar1" TextWrapping="Wrap"><Run Language="es-es" Text="Son 3 fases"/></TextBlock>
+                                    <TextBlock x:Name="tb_ejercicioDudas" TextWrapping="Wrap"><Run Language="es-es" Text="Son 3 fases"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 

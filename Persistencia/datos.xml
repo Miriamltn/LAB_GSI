@@ -176,6 +176,23 @@ Además, estos efectos pueden derivar en otros problemas de salud como fracturas
 		</etapa>
 	</seccion>
 
+	<seccion nombre="Enfermeria">
+		<etapa>
+			<nombre>Revisión del tratamiento</nombre>
+			<item>La familia debe hablar con el médico de atención primaria para valorar qué medicamentos no son necesarios o han dejado de serlo para así suspenderlos, manteniendo sólo los eficaces y seguros.</item>
+		</etapa>
+		<etapa>
+			<nombre>Reacción a nuevos síntomas</nombre>
+			<item>Si aparecen síntomas nuevos a la enfermedad después de haber iniciado un tratamiento farmacológico, incluidos los de herboristería (en caso de caídas, cambios de comportamiento, depresión, etc.), se deberían sustituir por otros más seguros ya que podría tratarse de una reacción adversa.</item>
+			<item>Como alternativa, se aconseja buscar tratamientos no farmacológicos, si existen: ortopédicos (bastones, andadores, plantillas, férulas, faja, órtesis, etc.), fisioterápicos (frío, calor, pedaletas domésticas, etc.), dietéticos (hiposódica para hipertensos, hipocalórica para diabéticos, etc), u otros (compañía, amigos, actividades, paseo, mascotas…).</item>
+		</etapa>
+	</seccion>
+
+	<seccion nombre="EjercicioDudas">
+		<etapa>
+			Debemos intentar que se mantenga activo el mayor tiempo posible: haciendo actividades que le gustaran antes de la enfermedad para que mejore su autoestima (costura, labores, jugar la partida, pasear con amigos…) y participando en las actividades que aún puede realizar (poner la mesa, hacer la cama…) para que no olvide y pueda sentirse útil y activo, estimulándolo cognitivamente.
+		</etapa>
+	</seccion>
 
 </informacion>
 

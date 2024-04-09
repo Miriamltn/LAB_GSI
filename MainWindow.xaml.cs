@@ -316,6 +316,75 @@ namespace LAB_GSI
                     tb_legal.Text = "Sección 'Consejos de recursos legales' no encontrada en el archivo XML.";
                 }
 
+                // Obtener la sección "Tratamiento y cuidados"
+                XmlNode seccionTratamientoCuidados = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Enfermeria']");
+
+                if (seccionTratamientoCuidados != null)
+                {
+                    // Obtener todos los nodos "etapa" dentro de "Tratamiento y cuidados"
+                    XmlNodeList etapasNodes = seccionTratamientoCuidados.SelectNodes("etapa");
+
+                    if (etapasNodes != null && etapasNodes.Count > 0)
+                    {
+                        // Construir el texto con las etapas y consejos en líneas separadas
+                        StringBuilder textoTratamientoCuidados = new StringBuilder();
+                        foreach (XmlNode etapaNode in etapasNodes)
+                        {
+                            string nombreEtapa = etapaNode.SelectSingleNode("nombre").InnerText;
+                            textoTratamientoCuidados.AppendLine($"## {nombreEtapa}");
+
+                            // Obtener los elementos 'item' dentro de 'etapa'
+                            XmlNodeList itemsNodes = etapaNode.SelectNodes("item");
+
+                            if (itemsNodes != null && itemsNodes.Count > 0)
+                            {
+                                foreach (XmlNode itemNode in itemsNodes)
+                                {
+                                    textoTratamientoCuidados.AppendLine($"- {itemNode.InnerText}");
+                                }
+                            }
+
+                            textoTratamientoCuidados.AppendLine(); // Separador entre etapas
+                        }
+
+                        // Mostrar el texto de tratamiento y cuidados en el TextBlock tb_enfermeria
+                        tb_enfermeria.Text = textoTratamientoCuidados.ToString().Trim();
+                    }
+                    else
+                    {
+                        tb_enfermeria.Text = "No se encontraron etapas de tratamiento y cuidados en el archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_enfermeria.Text = "Sección 'Tratamiento y cuidados' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionEjercicioDudas = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='EjercicioDudas']");
+
+                if (seccionEjercicioDudas != null)
+                {
+                    XmlNodeList etapasNodes = seccionEjercicioDudas.SelectNodes("etapa");
+
+                    if (etapasNodes != null && etapasNodes.Count > 0)
+                    {
+                        StringBuilder textoEjercicioDudas = new StringBuilder();
+                        foreach (XmlNode etapaNode in etapasNodes)
+                        {
+                            textoEjercicioDudas.AppendLine(etapaNode.InnerText.Trim());
+                        }
+
+                        tb_ejercicioDudas.Text = textoEjercicioDudas.ToString().Trim();
+                    }
+                    else
+                    {
+                        tb_ejercicioDudas.Text = "No se encontraron etapas en la sección 'EjercicioDudas' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_ejercicioDudas.Text = "Sección 'EjercicioDudas' no encontrada en el archivo XML.";
+                }
 
             }
             catch (Exception ex)
@@ -329,6 +398,7 @@ namespace LAB_GSI
                 tb_fisicas.Text = "Error al cargar los datos desde el archivo XML: " + ex.Message;
                 tb_causas.Text = "Error al cargar los datos desde el archivo XML: " + ex.Message;
                 tb_Esperanza.Text = "Error al cargar los datos desde el archivo XML: " + ex.Message;
+                tb_enfermeria.Text = "Error al cargar los datos desde el archivo XML " + ex.Message;
             }
         }
 
