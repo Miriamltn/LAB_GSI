@@ -354,7 +354,8 @@ namespace LAB_GSI
             List<Expander> allExpanders = new List<Expander> { Expander1, Expander2, Expander3, Expander4, Expander5, 
                 Expander6, Expander6, Expander8, Expander9,Expander10, Expander11, Expander12, Expander13, 
                 Expander14, Expander15, Expander16, Expander17, Expander18, Expander19, Expander20, Expander21, Expander22, 
-                Expander23, Expander24, Expander25, Expander26, Expander27, Expander28, Expander29, Expander30, Expander31, Expander32 };
+                Expander23, Expander24, Expander25, Expander26, Expander27, Expander28, Expander29, Expander30, Expander31, Expander32, Expander33,
+                Expander34, Expander35, Expander36, Expander37, Expander38, Expander39, Expander40, Expander41, Expander42, Expander43, Expander44};
 
             // Cierra todos los Expanders excepto el que se expandió
             foreach (Expander expander in allExpanders)
