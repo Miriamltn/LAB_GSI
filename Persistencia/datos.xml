@@ -176,6 +176,45 @@ Además, estos efectos pueden derivar en otros problemas de salud como fracturas
 		</etapa>
 	</seccion>
 
+	<seccion nombre="Enfermeria">
+		<etapa>
+			<nombre>Revisión del tratamiento</nombre>
+			<item>La familia debe hablar con el médico de atención primaria para valorar qué medicamentos no son necesarios o han dejado de serlo para así suspenderlos, manteniendo sólo los eficaces y seguros.</item>
+		</etapa>
+		<etapa>
+			<nombre>Reacción a nuevos síntomas</nombre>
+			<item>Si aparecen síntomas nuevos a la enfermedad después de haber iniciado un tratamiento farmacológico, incluidos los de herboristería (en caso de caídas, cambios de comportamiento, depresión, etc.), se deberían sustituir por otros más seguros ya que podría tratarse de una reacción adversa.</item>
+			<item>Como alternativa, se aconseja buscar tratamientos no farmacológicos, si existen: ortopédicos (bastones, andadores, plantillas, férulas, faja, órtesis, etc.), fisioterápicos (frío, calor, pedaletas domésticas, etc.), dietéticos (hiposódica para hipertensos, hipocalórica para diabéticos, etc), u otros (compañía, amigos, actividades, paseo, mascotas…).</item>
+		</etapa>
+	</seccion>
+
+	<seccion nombre="EjercicioDudas">
+		<etapa>
+			Debemos intentar que se mantenga activo el mayor tiempo posible: haciendo actividades que le gustaran antes de la enfermedad para que mejore su autoestima (costura, labores, jugar la partida, pasear con amigos…) y participando en las actividades que aún puede realizar (poner la mesa, hacer la cama…) para que no olvide y pueda sentirse útil y activo, estimulándolo cognitivamente.
+		</etapa>
+	</seccion>
+
+	<seccion nombre="Ducha">
+		<etapa>
+			Entre una bañera, una ducha y un sumidero (plato de ducha de obra, a ras de suelo), lo más práctico y eficaz es el sumidero, por ser de más fácil y cómodo acceso (no hay que salvar ningún escalón).
+		</etapa>
+		<etapa>
+			Si en casa sólo tenemos bañera (y no es posible realizar el cambio) debemos tener precaución e intentar adaptarla para evitar accidentes: colocar barras de sujeción en la pared (para que el paciente se pueda sujetar sin peligro) y poner alfombrillas antideslizantes en el interior de la bañera para evitar resbalones.
+		</etapa>
+		<etapa>
+			Cuando el paciente no se pueda mantener erguido dentro de la bañera, se puede hacer uso de un asiento giratorio de bañera, con respaldo y apoyabrazos (cómodo de usar y sin necesidad de realizar esfuerzos a la hora de introducirse en la bañera).
+		</etapa>
+	</seccion>
+
+	<seccion nombre="Salud">
+		<etapa>
+			En esos momentos en que la persona tiene la consciencia de la situación, es necesario el apoyo emocional del cuidador familiar.
+<item>Si el enfermo presenta angustia o miedo, el cuidador debe tranquilizar al paciente verbalmente comunicándole (con tono sereno) que durante la enfermedad no va a estar solo y que los problemas que vayan surgiendo se solucionarán.</item>
+	<item>A veces es suficiente con acariciar al familiar, abrazarlo o agarrar su mano, realizando una comunicación no verbal que transmita tranquilidad.</item>
+<item>Si estos momentos se repiten con mucha frecuencia es conveniente acudir a un especialista en salud mental para encontrar pautas de actuación más específicas.</item>
+		</etapa>
+	</seccion>
+
 
 </informacion>
 
