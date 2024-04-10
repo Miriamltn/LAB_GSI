@@ -322,5 +322,30 @@ Luego, vuelve a cruzar los brazos y repite este movimiento varias veces.
 		</etapa>
 	</seccion>
 
+	<seccion nombre="CuidadorDicho1">
+		<etapa>
+			Concédete el derecho a cometer errores y a experimentar sentimientos negativos
+(todos somos humanos, así que no te mortifiques).
+		</etapa>
+	</seccion>
+
+	<seccion nombre="CuidadorDicho2">
+		<etapa>
+			Busca toda la información que puedas a través de profesionales, asociaciones de familiares y conocidos. Así, podrás resolver todas tus dudas y solucionar los problemas que se te presenten.
+		</etapa>
+	</seccion>
+
+	<seccion nombre="CuidadorDicho3">
+		<etapa>
+			Muchas veces recurrir al humor, reírse de las situaciones te ayudará a desdramatizarlas y llevarlas mejor.
+		</etapa>
+	</seccion>
+
+	<seccion nombre="CuidadorDicho4">
+		<etapa>
+			No rechaces la ayuda que te ofrezcan familiares, vecinos o amigos. Es mejor aceptar ayuda y delegar algunas responsabilidades para mitigar la sobrecarga que supone ser el cuidador principal.
+		</etapa>
+	</seccion>
+	
 </informacion>
 

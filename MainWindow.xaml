@@ -660,7 +660,7 @@
 
                                 <Expander x:Name="Expander43" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
                                     <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="No pierdad el sentido del humor"/>
+                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="No pierdas el sentido del humor"/>
                                     </Expander.Header>
                                     <StackPanel
                                     Margin="24,8,24,16"
