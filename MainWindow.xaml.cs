@@ -494,6 +494,69 @@ namespace LAB_GSI
                     tb_ejercicio1.Text = "Sección 'EjercicioRelajacion' no encontrada en el archivo XML.";
                 }
 
+                XmlNode seccionEjercicioRelajacion2 = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Ejercicio2']");
+
+                if (seccionEjercicioRelajacion2 != null)
+                {
+                    XmlNode etapaNode = seccionEjercicioRelajacion2.SelectSingleNode("etapa");
+
+                    if (etapaNode != null)
+                    {
+                        string etapaText = etapaNode.InnerText.Trim();
+                        tb_ejercicio2.Text = etapaText;
+                    }
+                    else
+                    {
+                        tb_ejercicio2.Text = "No se encontró contenido en la sección 'Ejercicio2' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_ejercicio2.Text = "Sección 'Ejercicio2' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionEjercicio3 = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Ejercicio3']");
+
+                if (seccionEjercicio3 != null)
+                {
+                    XmlNode etapaNode = seccionEjercicio3.SelectSingleNode("etapa");
+
+                    if (etapaNode != null)
+                    {
+                        string etapaText = etapaNode.InnerText.Trim();
+                        tb_ejercicio3.Text = etapaText;
+                    }
+                    else
+                    {
+                        tb_ejercicio3.Text = "No se encontró contenido en la sección 'Ejercicio3' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_ejercicio3.Text = "Sección 'Ejercicio3' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionEjercicio4 = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Ejercicio4']");
+
+                if (seccionEjercicio4 != null)
+                {
+                    XmlNode etapaNode = seccionEjercicio4.SelectSingleNode("etapa");
+
+                    if (etapaNode != null)
+                    {
+                        string etapaText = etapaNode.InnerText.Trim();
+                        tb_ejercicio4.Text = etapaText;
+                    }
+                    else
+                    {
+                        tb_ejercicio4.Text = "No se encontró contenido en la sección 'Ejercicio4' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_ejercicio4.Text = "Sección 'Ejercicio4' no encontrada en el archivo XML.";
+                }
+
             }
             catch (Exception ex)
             {

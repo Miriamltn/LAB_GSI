@@ -360,7 +360,7 @@
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_estiramiento2" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 2"/></TextBlock>
+                                    <TextBlock x:Name="tb_ejercicio2" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 2"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
@@ -371,7 +371,7 @@
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_estiramiento3" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 3"/></TextBlock>
+                                    <TextBlock x:Name="tb_ejercicio3" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 3"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
@@ -382,7 +382,7 @@
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_estiramiento4" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 4"/><LineBreak/><Run Language="es-es"/></TextBlock>
+                                    <TextBlock x:Name="tb_ejercicio4" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 4"/><LineBreak/><Run Language="es-es"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
