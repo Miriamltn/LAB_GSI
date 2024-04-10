@@ -440,6 +440,60 @@ namespace LAB_GSI
                     tb_salud.Text = "Sección 'ApoyoEmocional' no encontrada en el archivo XML.";
                 }
 
+                XmlNode seccionRutinasPrincipales = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='RutinasPrincipales']");
+
+                if (seccionRutinasPrincipales != null)
+                {
+                    XmlNodeList etapasNodes = seccionRutinasPrincipales.SelectNodes("etapa");
+
+                    if (etapasNodes != null && etapasNodes.Count > 0)
+                    {
+                        StringBuilder textoRutinasPrincipales = new StringBuilder();
+                        foreach (XmlNode etapaNode in etapasNodes)
+                        {
+                            textoRutinasPrincipales.AppendLine(etapaNode.InnerText.Trim());
+                            textoRutinasPrincipales.AppendLine();
+                        }
+
+                        tb_rutinasPrincipal.Text = textoRutinasPrincipales.ToString().Trim();
+                    }
+                    else
+                    {
+                        tb_rutinasPrincipal.Text = "No se encontraron etapas en la sección 'RutinasPrincipales' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_rutinasPrincipal.Text = "Sección 'RutinasPrincipales' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionEjercicioRelajacion = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Ejercicio1']");
+
+                if (seccionEjercicioRelajacion != null)
+                {
+                    XmlNodeList etapasNodes = seccionEjercicioRelajacion.SelectNodes("etapa");
+
+                    if (etapasNodes != null && etapasNodes.Count > 0)
+                    {
+                        StringBuilder textoEjercicioRelajacion = new StringBuilder();
+                        foreach (XmlNode etapaNode in etapasNodes)
+                        {
+                            textoEjercicioRelajacion.AppendLine(etapaNode.InnerText.Trim());
+                            textoEjercicioRelajacion.AppendLine();
+                        }
+
+                        tb_ejercicio1.Text = textoEjercicioRelajacion.ToString().Trim();
+                    }
+                    else
+                    {
+                        tb_ejercicio1.Text = "No se encontraron etapas en la sección 'EjercicioRelajacion' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_ejercicio1.Text = "Sección 'EjercicioRelajacion' no encontrada en el archivo XML.";
+                }
+
             }
             catch (Exception ex)
             {

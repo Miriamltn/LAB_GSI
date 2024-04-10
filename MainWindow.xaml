@@ -334,7 +334,7 @@
                                 <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                    <TextBlock x:Name="tb_estiramiento1" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 1"/></TextBlock>
+                                    <TextBlock x:Name="tb_ejercicio1" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 1"/></TextBlock>
 
                                 </StackPanel>
                             </Expander>
@@ -381,15 +381,7 @@
                           Width="365" 
                           Grid.ColumnSpan="2" 
                           VerticalAlignment="Top">
-                            <TextBlock Text="Intenta captar su atención y explícale 10 que vais a hacer de manera divertida y fluida, comentándole que hacer estas actividades es importante para su salud.
-                                        Realiza tú los ejercicios para que el
-                                        paciente trate de imitarte y
-                                        acompañarte.
-                                        Ten paciencia y modifica la
-                                        actividad por una similar o más
-                                        sencilla si el enfermo tiene
-                                        dificultades, evitando siempre que
-                                        se sienta frustrado." 
+                            <TextBlock x:Name="tb_rutinasPrincipal" 
                            TextWrapping="Wrap" 
                            FontSize="16" 
                            Margin="10" Background="#40ADD8E6"/>
