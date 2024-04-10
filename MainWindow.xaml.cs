@@ -557,6 +557,176 @@ namespace LAB_GSI
                     tb_ejercicio4.Text = "Sección 'Ejercicio4' no encontrada en el archivo XML.";
                 }
 
+                XmlNode seccionCuidador1 = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Cuidador1']");
+
+                if (seccionCuidador1 != null)
+                {
+                    XmlNode etapaNode = seccionCuidador1.SelectSingleNode("etapa");
+
+                    if (etapaNode != null)
+                    {
+                        string etapaText = etapaNode.InnerText.Trim();
+                        tb_cuidador1.Text = etapaText;
+                    }
+                    else
+                    {
+                        tb_cuidador1.Text = "No se encontró contenido en la sección 'Cuidador1' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_cuidador1.Text = "Sección 'Cuidador1' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionCuidador2 = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Cuidador2']");
+
+                if (seccionCuidador2 != null)
+                {
+                    XmlNode etapaNode = seccionCuidador2.SelectSingleNode("etapa");
+
+                    if (etapaNode != null)
+                    {
+                        string etapaText = etapaNode.InnerText.Trim();
+                        tb_cuidador2.Text = etapaText;
+                    }
+                    else
+                    {
+                        tb_cuidador2.Text = "No se encontró contenido en la sección 'Cuidador2' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_cuidador2.Text = "Sección 'Cuidador2' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionCuidador3 = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Cuidador3']");
+
+                if (seccionCuidador3 != null)
+                {
+                    XmlNode etapaNode = seccionCuidador3.SelectSingleNode("etapa");
+
+                    if (etapaNode != null)
+                    {
+                        string etapaText = etapaNode.InnerText.Trim();
+                        tb_cuidador3.Text = etapaText;
+                    }
+                    else
+                    {
+                        tb_cuidador3.Text = "No se encontró contenido en la sección 'Cuidador3' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_cuidador3.Text = "Sección 'Cuidador3' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionCuidador4 = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Cuidador4']");
+
+                if (seccionCuidador4 != null)
+                {
+                    XmlNode etapaNode = seccionCuidador4.SelectSingleNode("etapa");
+
+                    if (etapaNode != null)
+                    {
+                        string etapaText = etapaNode.InnerText.Trim();
+                        tb_cuidador4.Text = etapaText;
+                    }
+                    else
+                    {
+                        tb_cuidador4.Text = "No se encontró contenido en la sección 'Cuidador4' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_cuidador4.Text = "Sección 'Cuidador4' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionCuidador5 = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Cuidador5']");
+
+                if (seccionCuidador5 != null)
+                {
+                    XmlNode etapaNode = seccionCuidador5.SelectSingleNode("etapa");
+
+                    if (etapaNode != null)
+                    {
+                        string etapaText = etapaNode.InnerText.Trim();
+                        tb_cuidador5.Text = etapaText;
+                    }
+                    else
+                    {
+                        tb_cuidador5.Text = "No se encontró contenido en la sección 'Cuidador5' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_cuidador5.Text = "Sección 'Cuidador5' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionCuidador6 = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Cuidador6']");
+
+                if (seccionCuidador6 != null)
+                {
+                    XmlNode etapaNode = seccionCuidador6.SelectSingleNode("etapa");
+
+                    if (etapaNode != null)
+                    {
+                        string etapaText = etapaNode.InnerText.Trim();
+                        tb_cuidador6.Text = etapaText;
+                    }
+                    else
+                    {
+                        tb_cuidador6.Text = "No se encontró contenido en la sección 'Cuidador6' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_cuidador6.Text = "Sección 'Cuidador6' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionCuidador7 = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Cuidador7']");
+
+                if (seccionCuidador7 != null)
+                {
+                    XmlNode etapaNode = seccionCuidador7.SelectSingleNode("etapa");
+
+                    if (etapaNode != null)
+                    {
+                        string etapaText = etapaNode.InnerText.Trim();
+                        tb_cuidador7.Text = etapaText;
+                    }
+                    else
+                    {
+                        tb_cuidador7.Text = "No se encontró contenido en la sección 'Cuidador7' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_cuidador7.Text = "Sección 'Cuidador7' no encontrada en el archivo XML.";
+                }
+
+                XmlNode seccionCuidador8 = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Cuidador8']");
+
+                if (seccionCuidador8 != null)
+                {
+                    XmlNode etapaNode = seccionCuidador8.SelectSingleNode("etapa");
+
+                    if (etapaNode != null)
+                    {
+                        string etapaText = etapaNode.InnerText.Trim();
+                        tb_cuidador8.Text = etapaText;
+                    }
+                    else
+                    {
+                        tb_cuidador8.Text = "No se encontró contenido en la sección 'Cuidador8' del archivo XML.";
+                    }
+                }
+                else
+                {
+                    tb_cuidador8.Text = "Sección 'Cuidador8' no encontrada en el archivo XML.";
+                }
+
+
+
             }
             catch (Exception ex)
             {

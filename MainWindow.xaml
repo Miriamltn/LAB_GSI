@@ -549,7 +549,7 @@
                                     <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_afasia1" TextWrapping="Wrap"><Run Language="es-es" Text="Definición de la enfermedad"/></TextBlock>
+                                        <TextBlock x:Name="tb_cuidador1" TextWrapping="Wrap"><Run Language="es-es" Text="Definición de la enfermedad"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
 
@@ -560,7 +560,7 @@
                                     <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_anomia1" TextWrapping="Wrap"><Run Language="es-es" Text="Def anomia"/></TextBlock>
+                                        <TextBlock x:Name="tb_cuidador2" TextWrapping="Wrap"><Run Language="es-es" Text="Def anomia"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
 
@@ -571,7 +571,7 @@
                                     <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tab_cuidador_principal1" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                        <TextBlock x:Name="tb_cuidador3" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
 
@@ -582,7 +582,7 @@
                                     <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_delirio1" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                        <TextBlock x:Name="tb_cuidador4" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
                                 <Expander x:Name="Expander37" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316" Margin="24,8,24,60">
@@ -592,7 +592,7 @@
                                     <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_grupo_apoyo_mutuo1" TextWrapping="Wrap"><Run Language="es-es" Text="Definición"/></TextBlock>
+                                        <TextBlock x:Name="tb_cuidador5" TextWrapping="Wrap"><Run Language="es-es" Text="Definición"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
                                 <Expander x:Name="Expander38" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
@@ -602,7 +602,7 @@
                                     <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tbparafasia1" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                        <TextBlock x:Name="tb_cuidador6" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
                                 <Expander x:Name="Expander39" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
@@ -612,7 +612,7 @@
                                     <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tab_respiro1" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                        <TextBlock x:Name="tb_cuidador7" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
                                 <Expander x:Name="Expander40" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
@@ -622,7 +622,7 @@
                                     <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_ulcera1" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                        <TextBlock x:Name="tb_cuidador8" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
 
