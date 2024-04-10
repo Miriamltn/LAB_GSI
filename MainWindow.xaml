@@ -425,7 +425,7 @@
                     </LinearGradientBrush>
                 </TabItem.Background>
                 <Grid>
-                    <ScrollViewer x:Name="Peliculas_youtube" Margin="-6,8,400,-8">
+                    <ScrollViewer x:Name="Peliculas_youtube" Margin="-2,-2,395,-4">
 
                         <Grid Grid.Column="1" >
 
@@ -456,10 +456,10 @@
                                 </StackPanel>
 
                                 <StackPanel x:Name="video_4" Orientation="Vertical" Margin="40,8,24,16">
-                                    <TextBox Text="Eclipse" Width="157" Margin="0,0,0,10" Background="#FF938874" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
+                                    <TextBox Text="Eclipse" Width="157" Margin="0,0,0,40" Background="#FF938874" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
                                     <StackPanel Orientation="Horizontal">
                                         <Button x:Name="video4" Click="AbrirVideo4" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
-                                        <Image Source="imagenes/video4.jpeg" Width="100" Height="100" HorizontalAlignment="Right"/>
+                                        <Image Source="imagenes/video3.jpeg" Width="100" Height="100" HorizontalAlignment="Right" Margin="30,0,0,0"/>
                                     </StackPanel>
                                 </StackPanel>
 
@@ -474,7 +474,7 @@
                             </StackPanel>
                         </Grid>
                     </ScrollViewer>
-                    <ScrollViewer x:Name="Biblioteca" Margin="399,0,-1,0">
+                    <ScrollViewer x:Name="Biblioteca" Margin="399,-1,-1,0">
 
                         <Grid Grid.Column="1" >
 
