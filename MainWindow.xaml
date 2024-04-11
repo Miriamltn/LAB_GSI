@@ -312,97 +312,128 @@
                         <GradientStop Color="#FFD4AF37" Offset="1"/>
                     </LinearGradientBrush>
                 </TabItem.Background>
-                <ScrollViewer>
 
-                    <Grid Grid.Column="1" >
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="50*"/>
-                            <ColumnDefinition Width="50*"/>
-                        </Grid.ColumnDefinitions>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="167*"/>
-                            <RowDefinition Height="40*"/>
-                        </Grid.RowDefinitions>
 
-                        <Button x:Name="btn_tabla_ejercicios"
-                        Content="Mostar Tabla de Ejercicos"
-                        FontWeight="Bold"
-                        Cursor="Hand"
-                        Click="AbrirTablaEjercicios"
-                        BorderThickness="0" Background="#AFB5DC7E" Margin="115,344,115,0" Grid.Column="1" Height="36" VerticalAlignment="Top">
-                            <Button.Template>
-                                <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
-                                        <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                                    </Border>
-                                </ControlTemplate>
-                            </Button.Template>
-                        </Button>
+                <Grid>
+                    <ScrollViewer x:Name="rutinas1" Margin="-3,0,-1,0" VerticalScrollBarVisibility="Auto">
 
-                        <StackPanel x:Name="rutinas" Margin="-3,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="391" Height="409">
+                        <ScrollViewer.Resources>
+                            <Style x:Key="{x:Type ScrollBar}" TargetType="ScrollBar">
+                                <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+                                <Setter Property="Foreground" Value="DarkGray"/>
+                                <Setter Property="Width" Value="20"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ScrollBar">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+                                                <Border Grid.Row="0" CornerRadius="10" Background="Gray"/>
+                                                <Track Name="PART_Track" Grid.Row="0">
+                                                    <Track.Thumb>
+                                                        <Thumb Background="DarkGray" BorderBrush="Transparent" BorderThickness="1">
+                                                            <Thumb.Template>
+                                                                <ControlTemplate TargetType="{x:Type Thumb}">
+                                                                    <Rectangle Fill="{TemplateBinding Background}" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" RadiusX="10" RadiusY="10"/>
+                                                                </ControlTemplate>
+                                                            </Thumb.Template>
+                                                        </Thumb>
+                                                    </Track.Thumb>
+                                                </Track>
+                                            </Grid>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ScrollViewer.Resources>
+                        <Grid Grid.Column="1">
 
-                            <Expander x:Name="Expander17" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#40ADD8E6">
-                                <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Estiramiento de cuello y hombros"/>
-                                </Expander.Header>
-                                <StackPanel
-                                    Margin="24,8,24,16"
-                                    Orientation="Vertical">
-                                    <TextBlock x:Name="tb_ejercicio1" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 1"/></TextBlock>
+                            <Grid Grid.Column="1" >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="50*"/>
+                                    <ColumnDefinition Width="50*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="167*"/>
+                                    <RowDefinition Height="40*"/>
+                                </Grid.RowDefinitions>
+
+                                <Button x:Name="btn_tabla_ejercicios"
+        Content="Mostar Tabla de Ejercicos"
+        FontWeight="Bold"
+        Cursor="Hand"
+        Click="AbrirTablaEjercicios"
+        BorderThickness="0" Background="#AFB5DC7E" Margin="129,344,101,0" Grid.Column="1" Height="36" VerticalAlignment="Top">
+                                    <Button.Template>
+                                        <ControlTemplate TargetType="{x:Type Button}">
+                                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Button.Template>
+                                </Button>
+
+                                <StackPanel x:Name="rutinas" Margin="-3,0,0,0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="391" Height="409">
+
+                                    <Expander x:Name="Expander17" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#40ADD8E6">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Estiramiento de cuello y hombros"/>
+                                        </Expander.Header>
+                                        <StackPanel
+                    Margin="24,8,24,16"
+                    Orientation="Vertical">
+                                            <TextBlock x:Name="tb_ejercicio1" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 1"/></TextBlock>
+
+                                        </StackPanel>
+                                    </Expander>
+
+                                    <Expander x:Name="Expander18" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#40ADD8E6">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Estiramiento de brazos y espalda"/>
+                                        </Expander.Header>
+                                        <StackPanel
+                    Margin="24,8,24,16"
+                    Orientation="Vertical">
+                                            <TextBlock x:Name="tb_ejercicio2" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 2"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
+
+                                    <Expander x:Name="Expander19" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24, 60" BorderBrush="#FF192841" Background="#40ADD8E6">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Estiramiento de piernas"/>
+                                        </Expander.Header>
+                                        <StackPanel
+                    Margin="24,8,24,16"
+                    Orientation="Vertical">
+                                            <TextBlock x:Name="tb_ejercicio3" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 3"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
+
+                                    <Expander x:Name="Expander20" Expanded="Expander_Expanded" Margin="24,8,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#40ADD8E6">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Estiramiento de manos y muñecas"/>
+                                        </Expander.Header>
+                                        <StackPanel
+                    Margin="24,8,24,16"
+                    Orientation="Vertical">
+                                            <TextBlock x:Name="tb_ejercicio4" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 4"/><LineBreak/><Run Language="es-es"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
 
                                 </StackPanel>
-                            </Expander>
 
-                            <Expander x:Name="Expander18" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#40ADD8E6">
-                                <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Estiramiento de brazos y espalda"/>
-                                </Expander.Header>
-                                <StackPanel
-                                    Margin="24,8,24,16"
-                                    Orientation="Vertical">
-                                    <TextBlock x:Name="tb_ejercicio2" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 2"/></TextBlock>
-                                </StackPanel>
-                            </Expander>
 
-                            <Expander x:Name="Expander19" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24, 60" BorderBrush="#FF192841" Background="#40ADD8E6">
-                                <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Estiramiento de piernas"/>
-                                </Expander.Header>
-                                <StackPanel
-                                    Margin="24,8,24,16"
-                                    Orientation="Vertical">
-                                    <TextBlock x:Name="tb_ejercicio3" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 3"/></TextBlock>
-                                </StackPanel>
-                            </Expander>
+                            </Grid>
 
-                            <Expander x:Name="Expander20" Expanded="Expander_Expanded" Margin="24,8,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#40ADD8E6">
-                                <Expander.Header>
-                                    <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Estiramiento de manos y muñecas"/>
-                                </Expander.Header>
-                                <StackPanel
-                                    Margin="24,8,24,16"
-                                    Orientation="Vertical">
-                                    <TextBlock x:Name="tb_ejercicio4" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 4"/><LineBreak/><Run Language="es-es"/></TextBlock>
-                                </StackPanel>
-                            </Expander>
+                        </Grid>
+                    </ScrollViewer>
 
-                        </StackPanel>
+                    <Image x:Name="gif" Source="imagenes/ejemplo.gif" Margin="405,42,28,77" /> <!-- GIF -->
+                </Grid>
 
-                        <ScrollViewer x:Name="Consejo_para_cuidador" 
-                          HorizontalAlignment="Right" 
-                          Height="332" 
-                          Margin="317,10,0,0" 
-                          Width="365" 
-                          Grid.ColumnSpan="2" 
-                          VerticalAlignment="Top">
-                            <TextBlock x:Name="tb_rutinasPrincipal" 
-                           TextWrapping="Wrap" 
-                           FontSize="16" 
-                           Margin="10" Background="#40ADD8E6"/>
-                        </ScrollViewer>
 
-                    </Grid>
-                </ScrollViewer>
+
 
 
 
@@ -417,107 +448,169 @@
                     </LinearGradientBrush>
                 </TabItem.Background>
                 <Grid>
-                    <ScrollViewer x:Name="Peliculas_youtube" Margin="-2,-2,395,-4">
+                    <ScrollViewer x:Name="repositorio_peliculas" Margin="-3,0,397,0">
+                        <ScrollViewer.Resources>
+                            <Style x:Key="{x:Type ScrollBar}" TargetType="ScrollBar">
+                                <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+                                <Setter Property="Foreground" Value="#00000000"/>
+                                <Setter Property="Width" Value="20"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ScrollBar">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+                                                <Border Grid.Row="0" CornerRadius="10" Background="#00000000"/>
+                                                <Track Name="PART_Track" Grid.Row="0">
+                                                    <Track.Thumb>
+                                                        <Thumb Background="#00000000" BorderBrush="Transparent" BorderThickness="1">
+                                                            <Thumb.Template>
+                                                                <ControlTemplate TargetType="{x:Type Thumb}">
+                                                                    <Rectangle Fill="{TemplateBinding Background}" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" RadiusX="10" RadiusY="10"/>
+                                                                </ControlTemplate>
+                                                            </Thumb.Template>
+                                                        </Thumb>
+                                                    </Track.Thumb>
+                                                </Track>
+                                            </Grid>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ScrollViewer.Resources>
+                        <Grid Grid.Column="1">
 
-                        <Grid Grid.Column="1" >
+                            <Grid Grid.Column="1" >
 
-                            <StackPanel x:Name="peliculas" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
+                                <StackPanel x:Name="peliculas" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
 
-                                <StackPanel x:Name="video_1" Orientation="Vertical" Margin="40,8,24,16">
-                                    <TextBox Text="Para que no me olvides" Width="157" Margin="0,0,0,10" Background="#FF938874" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16"/>
-                                    <StackPanel Orientation="Horizontal">
-                                        <Button x:Name="video1" Click="AbrirVideo1" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
-                                        <Image Source="imagenes/peli1.jpeg" Width="100" Height="100" HorizontalAlignment="Right"/>
+                                    <StackPanel x:Name="video_1" Orientation="Vertical" Margin="40,8,24,16">
+                                        <TextBox Text="Para que no me olvides" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="video1" Click="AbrirVideo1" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
+                                            <Image Source="imagenes/peli1.jpeg" Width="100" Height="100" HorizontalAlignment="Right"/>
+                                        </StackPanel>
                                     </StackPanel>
-                                </StackPanel>
 
-                                <StackPanel x:Name="video_2" Orientation="Vertical" Margin="40,8,24,16">
-                                    <TextBox Text="El río de la memoria" Width="157" Margin="0,0,0,10" Background="#FF938874" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" HorizontalAlignment="Center" TextAlignment="Center"/>
-                                    <StackPanel Orientation="Horizontal">
-                                        <Button x:Name="video2" Click="AbrirVideo2" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
-                                        <Image Source="imagenes/video2.jpeg" Width="103" Height="100" Margin="30,0,0,0"/>
+                                    <StackPanel x:Name="video_2" Orientation="Vertical" Margin="40,8,24,16">
+                                        <TextBox Text="El río de la memoria" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" HorizontalAlignment="Center" TextAlignment="Center"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="video2" Click="AbrirVideo2" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
+                                            <Image Source="imagenes/video2.jpeg" Width="103" Height="100" Margin="30,0,0,0"/>
+                                        </StackPanel>
                                     </StackPanel>
-                                </StackPanel>
 
-                                <StackPanel x:Name="video_3" Orientation="Vertical" Margin="40,8,24,16">
-                                    <TextBox Text="Y Tu Quien Eres" Width="157" Margin="0,0,0,10" Background="#FF938874" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
-                                    <StackPanel Orientation="Horizontal">
-                                        <Button x:Name="video3" Click="AbrirVideo3" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
-                                        <Image Source="imagenes/video4.jpeg" Width="100" Height="100" HorizontalAlignment="Right"/>
+                                    <StackPanel x:Name="video_3" Orientation="Vertical" Margin="40,8,24,16">
+                                        <TextBox Text="Y Tu Quien Eres" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="video3" Click="AbrirVideo3" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
+                                            <Image Source="imagenes/video4.jpeg" Width="100" Height="100" HorizontalAlignment="Right"/>
+                                        </StackPanel>
                                     </StackPanel>
-                                </StackPanel>
 
-                                <StackPanel x:Name="video_4" Orientation="Vertical" Margin="40,8,24,16">
-                                    <TextBox Text="Eclipse" Width="157" Margin="0,0,0,40" Background="#FF938874" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
-                                    <StackPanel Orientation="Horizontal">
-                                        <Button x:Name="video4" Click="AbrirVideo4" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
-                                        <Image Source="imagenes/video3.jpeg" Width="100" Height="100" HorizontalAlignment="Right" Margin="30,0,0,0"/>
+                                    <StackPanel x:Name="video_4" Orientation="Vertical" Margin="40,8,24,16">
+                                        <TextBox Text="Eclipse" Width="157" Margin="0,0,0,40" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="video4" Click="AbrirVideo4" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
+                                            <Image Source="imagenes/video3.jpeg" Width="100" Height="100" HorizontalAlignment="Right" Margin="30,0,0,0"/>
+                                        </StackPanel>
                                     </StackPanel>
-                                </StackPanel>
 
-                                <StackPanel x:Name="video_5" Orientation="Vertical" Margin="40,8,24,16">
-                                    <TextBox Text="Recuérdame" Width="157" Margin="0,0,0,10" Background="#FF938874" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
-                                    <StackPanel Orientation="Horizontal">
-                                        <Button x:Name="video5" Click="AbrirVideo5" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
-                                        <Image Source="imagenes/video5.jpeg" Width="100" Height="100" HorizontalAlignment="Right"/>
+                                    <StackPanel x:Name="video_5" Orientation="Vertical" Margin="40,8,24,16">
+                                        <TextBox Text="Recuérdame" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="video5" Click="AbrirVideo5" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
+                                            <Image Source="imagenes/video5.jpeg" Width="100" Height="100" HorizontalAlignment="Right"/>
+                                        </StackPanel>
                                     </StackPanel>
-                                </StackPanel>
 
-                            </StackPanel>
+                                </StackPanel>
+                            </Grid>
+
                         </Grid>
                     </ScrollViewer>
-                    <ScrollViewer x:Name="Biblioteca" Margin="399,-1,-1,0">
 
-                        <Grid Grid.Column="1" >
+                    <ScrollViewer x:Name="repositorio_libros" Margin="395,0,-1,0">
+                        <ScrollViewer.Resources>
+                            <Style x:Key="{x:Type ScrollBar}" TargetType="ScrollBar">
+                                <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+                                <Setter Property="Foreground" Value="#00000000"/>
+                                <Setter Property="Width" Value="20"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ScrollBar">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+                                                <Border Grid.Row="0" CornerRadius="10" Background="#00000000"/>
+                                                <Track Name="PART_Track" Grid.Row="0">
+                                                    <Track.Thumb>
+                                                        <Thumb Background="Transparent" BorderBrush="Transparent" BorderThickness="1">
+                                                            <Thumb.Template>
+                                                                <ControlTemplate TargetType="{x:Type Thumb}">
+                                                                    <Rectangle Fill="{TemplateBinding Background}" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" RadiusX="10" RadiusY="10"/>
+                                                                </ControlTemplate>
+                                                            </Thumb.Template>
+                                                        </Thumb>
+                                                    </Track.Thumb>
+                                                </Track>
+                                            </Grid>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ScrollViewer.Resources>
+                        <Grid Grid.Column="1">
 
-                            <StackPanel x:Name="primero2" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
+                            <Grid Grid.Column="1" >
 
-                                <Expander x:Name="Expander29" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Las amapolas del olvido"/>
-                                    </Expander.Header>
-                                    <StackPanel
-                                        Margin="24,8,24,16"
-                                        Orientation="Vertical">
-                                        <Image x:Name="image" Height="126" Width="92" Source="/imagenes/amapolas.jpg"/>
+                                <StackPanel x:Name="biblioteca" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
+
+                                    <StackPanel x:Name="libro_1" Orientation="Vertical" Margin="40,8,24,16">
+                                        <TextBox Text="Las amapolas del olvido" Width="161" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="libro1" Click="AbrirLibro1" Content="Comprar libro" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
+                                            <Image Source="/imagenes/libro1.png" Width="100" Height="100" HorizontalAlignment="Right"/>
+                                        </StackPanel>
                                     </StackPanel>
-                                </Expander>
 
-                                <Expander x:Name="Expander30" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#60582040">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="El día menos pensado"/>
-                                    </Expander.Header>
-                                    <StackPanel
-                                        Margin="24,8,24,16"
-                                        Orientation="Vertical">
-                                        <Image x:Name="image1" Height="100" Width="100" Source="/imagenes/libro2.jpg"/>
+                                    <StackPanel x:Name="libro_2" Orientation="Vertical" Margin="40,8,24,16">
+                                        <TextBox Text="El río de la memoria" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" HorizontalAlignment="Center" TextAlignment="Center"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="libro2" Click="AbrirLibro2" Content="Comprar libro" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
+                                            <Image Source="/imagenes/libro2.png" Width="79" Height="100" Margin="30,0,0,0"/>
+                                        </StackPanel>
                                     </StackPanel>
-                                </Expander>
 
-                                <Expander x:Name="Expander31" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24, 60" BorderBrush="#FF192841" Background="#60582040                                       ">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Siempre Alice"/>
-                                    </Expander.Header>
-                                    <StackPanel
-                                        Margin="24,8,24,16"
-                                        Orientation="Vertical">
-                                        <Image x:Name="image2" Height="100" Width="100" Source="/imagenes/libro3.jpg"/>
+                                    <StackPanel x:Name="video_8" Orientation="Vertical" Margin="40,8,24,16">
+                                        <TextBox Text="Siempre Alice" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="video8" Click="AbrirLibro3" Content="Comprar libro" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
+                                            <Image Source="/imagenes/libro3.png" Width="100" Height="100" HorizontalAlignment="Right"/>
+                                        </StackPanel>
                                     </StackPanel>
-                                </Expander>
 
-                                <Expander x:Name="Expander32" Expanded="Expander_Expanded" Margin="24,8,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Text="Vitaminas para no olvidar"/><LineBreak/><Run/></TextBlock>
-                                    </Expander.Header>
-                                    <StackPanel
-                                        Margin="24,8,24,16"
-                                        Orientation="Vertical">
-                                        <Image x:Name="image3" Height="100" Width="100" Source="/imagenes/libro4.jpg"/>
+                                    <StackPanel x:Name="video_9" Orientation="Vertical" Margin="40,8,24,16">
+                                        <TextBox Text="Eclipse" Width="157" Margin="0,0,0,40" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="video9" Click="AbrirLibro4" Content="Comprar libro" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
+                                            <Image Source="/imagenes/libro4.png" Width="83" Height="100" Margin="30,0,0,0"/>
+                                        </StackPanel>
                                     </StackPanel>
-                                </Expander>
 
+                                    <StackPanel x:Name="video_10" Orientation="Vertical" Margin="40,8,24,16">
+                                        <TextBox Text="Recuérdame" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
+                                        <StackPanel Orientation="Horizontal">
+                                            <Button x:Name="video10" Click="AbrirLibro5" Content="Comprar libro" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
+                                            <Image Source="/imagenes/libro5.png" Width="100" Height="100" HorizontalAlignment="Right"/>
+                                        </StackPanel>
+                                    </StackPanel>
 
-                            </StackPanel>
+                                </StackPanel>
+                            </Grid>
+
                         </Grid>
                     </ScrollViewer>
 
@@ -536,152 +629,223 @@
                 </TabItem.Background>
 
                 <Grid>
-                    <ScrollViewer x:Name="Informacion_cuidador" Margin="-3,0,397,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
 
-                        <Grid Grid.Column="1" >
+                    <ScrollViewer x:Name="Informacion_cuidador" Margin="-3,0,397,0" Height="406" VerticalAlignment="Bottom">
+                        <ScrollViewer.Resources>
+                            <Style x:Key="{x:Type ScrollBar}" TargetType="ScrollBar">
+                                <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+                                <Setter Property="Foreground" Value="#CCA300"/>
+                                <Setter Property="Width" Value="20"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ScrollBar">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+                                                <Border Grid.Row="0" CornerRadius="10" Background="#FFEEAD"/>
+                                                <Track Name="PART_Track" Grid.Row="0">
+                                                    <Track.Thumb>
+                                                        <Thumb Background="#CCA300
+                                                               " BorderBrush="Transparent" BorderThickness="1">
+                                                            <Thumb.Template>
+                                                                <ControlTemplate TargetType="{x:Type Thumb}">
+                                                                    <Rectangle Fill="{TemplateBinding Background}" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" RadiusX="10" RadiusY="10"/>
+                                                                </ControlTemplate>
+                                                            </Thumb.Template>
+                                                        </Thumb>
+                                                    </Track.Thumb>
+                                                </Track>
+                                            </Grid>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ScrollViewer.Resources>
+                        <Grid Grid.Column="1">
+                            <Grid Grid.Column="1" >
 
-                            <StackPanel x:Name="Dudas" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
+                                <StackPanel x:Name="Dudas" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
 
-                                <Expander x:Name="Expander33" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Qué papel desempeña en la familia en el momento del diagnóstico de la enfermedad?"/></TextBlock>
-                                    </Expander.Header>
-                                    <StackPanel
+                                    <Expander x:Name="Expander33" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Qué papel desempeña en la familia en el momento del diagnóstico de la enfermedad?"/></TextBlock>
+                                        </Expander.Header>
+                                        <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_cuidador1" TextWrapping="Wrap"><Run Language="es-es" Text="Definición de la enfermedad"/></TextBlock>
-                                    </StackPanel>
-                                </Expander>
+                                            <TextBlock x:Name="tb_cuidador1" TextWrapping="Wrap"><Run Language="es-es" Text="Definición de la enfermedad"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
 
-                                <Expander x:Name="Expander34" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#60582040">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Tras el diagnóstico, ¿cómo se puede afrontar la nueva realidad?"/></TextBlock>
-                                    </Expander.Header>
-                                    <StackPanel
+                                    <Expander x:Name="Expander34" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24,60" BorderBrush="#FF192841" Background="#60582040">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Tras el diagnóstico, ¿cómo se puede afrontar la nueva realidad?"/></TextBlock>
+                                        </Expander.Header>
+                                        <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_cuidador2" TextWrapping="Wrap"><Run Language="es-es" Text="Def anomia"/></TextBlock>
-                                    </StackPanel>
-                                </Expander>
+                                            <TextBlock x:Name="tb_cuidador2" TextWrapping="Wrap"><Run Language="es-es" Text="Def anomia"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
 
-                                <Expander x:Name="Expander35" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24, 60" BorderBrush="#FF192841" Background="#60582040                                       ">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Es importante que exista una buena comunicación entre el médico de cabecera y la familia?"/></TextBlock>
-                                    </Expander.Header>
-                                    <StackPanel
+                                    <Expander x:Name="Expander35" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Cursor="Hand" Margin="24,8,24, 60" BorderBrush="#FF192841" Background="#60582040                                       ">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Es importante que exista una buena comunicación entre el médico de cabecera y la familia?"/></TextBlock>
+                                        </Expander.Header>
+                                        <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_cuidador3" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
-                                    </StackPanel>
-                                </Expander>
+                                            <TextBlock x:Name="tb_cuidador3" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
 
-                                <Expander x:Name="Expander36" Expanded="Expander_Expanded" Margin="24,8,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cómo me puedo anticipar a las dificultades que pueden surgir con el avance de la enfermedad?"/></TextBlock>
-                                    </Expander.Header>
-                                    <StackPanel
+                                    <Expander x:Name="Expander36" Expanded="Expander_Expanded" Margin="24,8,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cómo me puedo anticipar a las dificultades que pueden surgir con el avance de la enfermedad?"/></TextBlock>
+                                        </Expander.Header>
+                                        <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_cuidador4" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
-                                    </StackPanel>
-                                </Expander>
-                                <Expander x:Name="Expander37" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316" Margin="24,8,24,60">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿De qué depende el éxito en el cuidado de un familiar con demencia?"/></TextBlock>
-                                    </Expander.Header>
-                                    <StackPanel
+                                            <TextBlock x:Name="tb_cuidador4" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
+                                    <Expander x:Name="Expander37" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316" Margin="24,8,24,60">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿De qué depende el éxito en el cuidado de un familiar con demencia?"/></TextBlock>
+                                        </Expander.Header>
+                                        <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_cuidador5" TextWrapping="Wrap"><Run Language="es-es" Text="Definición"/></TextBlock>
-                                    </StackPanel>
-                                </Expander>
-                                <Expander x:Name="Expander38" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cuál es el perfil del cuidador principal?"/></TextBlock>
-                                    </Expander.Header>
-                                    <StackPanel
+                                            <TextBlock x:Name="tb_cuidador5" TextWrapping="Wrap"><Run Language="es-es" Text="Definición"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
+                                    <Expander x:Name="Expander38" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cuál es el perfil del cuidador principal?"/></TextBlock>
+                                        </Expander.Header>
+                                        <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_cuidador6" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
-                                    </StackPanel>
-                                </Expander>
-                                <Expander x:Name="Expander39" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Qué implica ser el cuidador principal?"/></TextBlock>
-                                    </Expander.Header>
-                                    <StackPanel
+                                            <TextBlock x:Name="tb_cuidador6" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
+                                    <Expander x:Name="Expander39" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Qué implica ser el cuidador principal?"/></TextBlock>
+                                        </Expander.Header>
+                                        <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_cuidador7" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
-                                    </StackPanel>
-                                </Expander>
-                                <Expander x:Name="Expander40" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cuáles son las ventajas de que exista un cuidador principal en la familia?"/></TextBlock>
-                                    </Expander.Header>
-                                    <StackPanel
+                                            <TextBlock x:Name="tb_cuidador7" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
+                                    <Expander x:Name="Expander40" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="¿Cuáles son las ventajas de que exista un cuidador principal en la familia?"/></TextBlock>
+                                        </Expander.Header>
+                                        <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_cuidador8" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
-                                    </StackPanel>
-                                </Expander>
+                                            <TextBlock x:Name="tb_cuidador8" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
 
-                            </StackPanel>
+                                </StackPanel>
+                            </Grid>
                         </Grid>
                     </ScrollViewer>
-                    <ScrollViewer x:Name="Consejos" Margin="399,0,-1,0">
 
-                        <Grid Grid.Column="1" >
 
-                            <StackPanel x:Name="primero4" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
+                    <ScrollViewer x:Name="Consejos_cuidador" Margin="396,-2,-2,2">
+                        <ScrollViewer.Resources>
+                            <Style x:Key="{x:Type ScrollBar}" TargetType="ScrollBar">
+                                <Setter Property="Stylus.IsFlicksEnabled" Value="False"/>
+                                <Setter Property="Foreground" Value="#CCA300"/>
+                                <Setter Property="Width" Value="20"/>
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="ScrollBar">
+                                            <Grid>
+                                                <Grid.RowDefinitions>
+                                                    <RowDefinition Height="*"/>
+                                                </Grid.RowDefinitions>
+                                                <Border Grid.Row="0" CornerRadius="10" Background="#FFEEAD"/>
+                                                <Track Name="PART_Track" Grid.Row="0">
+                                                    <Track.Thumb>
+                                                        <Thumb Background="#CCA300" BorderBrush="Transparent" BorderThickness="1">
+                                                            <Thumb.Template>
+                                                                <ControlTemplate TargetType="{x:Type Thumb}">
+                                                                    <Rectangle Fill="{TemplateBinding Background}" Stroke="{TemplateBinding BorderBrush}" StrokeThickness="{TemplateBinding BorderThickness}" RadiusX="10" RadiusY="10"/>
+                                                                </ControlTemplate>
+                                                            </Thumb.Template>
+                                                        </Thumb>
+                                                    </Track.Thumb>
+                                                </Track>
+                                            </Grid>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </ScrollViewer.Resources>
+                        <Grid Grid.Column="1">
 
-                                <Expander x:Name="Expander41" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Te puedes equivocar"/>
-                                    </Expander.Header>
-                                    <StackPanel
+                            <Grid Grid.Column="1" >
+
+                                <StackPanel x:Name="primero4" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
+
+                                    <Expander x:Name="Expander41" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Te puedes equivocar"/>
+                                        </Expander.Header>
+                                        <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_equivocarse" TextWrapping="Wrap"><Run Language="es-es" Text="TE PUEDES EQUIVOCAR"/></TextBlock>
-                                    </StackPanel>
-                                </Expander>
+                                            <TextBlock x:Name="tb_equivocarse" TextWrapping="Wrap"><Run Language="es-es" Text="TE PUEDES EQUIVOCAR"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
 
 
-                                <Expander x:Name="Expander42" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="No te pares"/>
-                                    </Expander.Header>
-                                    <StackPanel
+                                    <Expander x:Name="Expander42" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="No te pares"/>
+                                        </Expander.Header>
+                                        <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_no_pares" TextWrapping="Wrap"><Run Language="es-es" Text="NO TE PARES"/></TextBlock>
-                                    </StackPanel>
-                                </Expander>
+                                            <TextBlock x:Name="tb_no_pares" TextWrapping="Wrap"><Run Language="es-es" Text="NO TE PARES"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
 
-                                <Expander x:Name="Expander43" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="No pierdas el sentido del humor"/>
-                                    </Expander.Header>
-                                    <StackPanel
+                                    <Expander x:Name="Expander43" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="No pierdas el sentido del humor"/>
+                                        </Expander.Header>
+                                        <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_humor" TextWrapping="Wrap"><Run Language="es-es" Text="No pierdad el sentido del humor"/></TextBlock>
-                                    </StackPanel>
-                                </Expander>
+                                            <TextBlock x:Name="tb_humor" TextWrapping="Wrap"><Run Language="es-es" Text="No pierdad el sentido del humor"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
 
-                                <Expander x:Name="Expander44" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
-                                    <Expander.Header>
-                                        <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Déjate ayudar"/>
-                                    </Expander.Header>
-                                    <StackPanel
+                                    <Expander x:Name="Expander44" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316">
+                                        <Expander.Header>
+                                            <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Déjate ayudar"/>
+                                        </Expander.Header>
+                                        <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                        <TextBlock x:Name="tb_dejate_ayudar" TextWrapping="Wrap"><Run Language="es-es" Text="Déjate ayudar"/></TextBlock>
-                                    </StackPanel>
-                                </Expander>
+                                            <TextBlock x:Name="tb_dejate_ayudar" TextWrapping="Wrap"><Run Language="es-es" Text="Déjate ayudar"/></TextBlock>
+                                        </StackPanel>
+                                    </Expander>
 
 
-                            </StackPanel>
+                                </StackPanel>
+                            </Grid>
+
                         </Grid>
                     </ScrollViewer>
 

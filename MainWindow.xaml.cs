@@ -4,6 +4,9 @@ using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Xml;
+using System.Windows.Media.Imaging;
+using static System.Net.Mime.MediaTypeNames;
+
 
 namespace LAB_GSI
 {
@@ -13,6 +16,15 @@ namespace LAB_GSI
         {
             InitializeComponent();
             CargarDefinicionDesdeXML();
+            
+            // Para lanzar el gif pero no funciona REVISARLO 
+            BitmapImage bitmap = new BitmapImage();
+            bitmap.BeginInit();
+            bitmap.UriSource = new Uri("ruta/a/tu/imagen.gif", UriKind.Relative);
+            bitmap.EndInit();
+
+            // Asignar el BitmapImage al control Image
+            ejemplo.Source = bitmap;
         }
 
         private void CargarDefinicionDesdeXML()
@@ -455,16 +467,16 @@ namespace LAB_GSI
                             textoRutinasPrincipales.AppendLine();
                         }
 
-                        tb_rutinasPrincipal.Text = textoRutinasPrincipales.ToString().Trim();
+                        //tb_rutinasPrincipal.Text = textoRutinasPrincipales.ToString().Trim();
                     }
                     else
                     {
-                        tb_rutinasPrincipal.Text = "No se encontraron etapas en la sección 'RutinasPrincipales' del archivo XML.";
+                       // tb_rutinasPrincipal.Text = "No se encontraron etapas en la sección 'RutinasPrincipales' del archivo XML.";
                     }
                 }
                 else
                 {
-                    tb_rutinasPrincipal.Text = "Sección 'RutinasPrincipales' no encontrada en el archivo XML.";
+                   // tb_rutinasPrincipal.Text = "Sección 'RutinasPrincipales' no encontrada en el archivo XML.";
                 }
 
                 XmlNode seccionEjercicioRelajacion = xmlDoc.SelectSingleNode("/informacion/seccion[@nombre='Ejercicio1']");
@@ -848,8 +860,7 @@ namespace LAB_GSI
             // Crea una lista con todos tus Expanders
             List<Expander> allExpanders = new List<Expander> { Expander1, Expander2, Expander3, Expander4, Expander5, 
                 Expander6, Expander6, Expander8, Expander9,Expander10, Expander11, Expander12, Expander13, 
-                Expander14, Expander15, Expander16, Expander17, Expander18, Expander19, Expander20, 
-                Expander29, Expander30, Expander31, Expander32, Expander33, Expander34, Expander35, 
+                Expander14, Expander15, Expander16, Expander17, Expander18, Expander19, Expander20, Expander33, Expander34, Expander35, 
                 Expander36, Expander37, Expander38, Expander39, Expander40, Expander41, Expander42, Expander43, Expander44};
 
             // Cierra todos los Expanders excepto el que se expandió
@@ -929,7 +940,8 @@ namespace LAB_GSI
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
         }
 
-        // Para abrir los links de los libros 
+        // LIBROS -------------------------------------------------------------------------------------------------
+
         private void AbrirLibro1(object sender, RoutedEventArgs e)
         {
             string enlace = "https://www.casadellibro.com/libro-pe-las-amapolas-del-olvido-un-hogar-tres-generaciones-y-un-viaje-al-alzheimer/9788484609797/1841214";
@@ -939,7 +951,7 @@ namespace LAB_GSI
 
         private void AbrirLibro2(object sender, RoutedEventArgs e)
         {
-            string enlace = "https://www.casadellibro.com/ebook-el-dia-menos-pensado-ebook/9789877389227/12998490";
+            string enlace = "https://www.casadellibro.com/ebook-el-dia-menos-pensado-ebook/9788415098485/1969276";
 
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
         }
@@ -957,6 +969,15 @@ namespace LAB_GSI
 
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
         }
+
+        private void AbrirLibro5(object sender, RoutedEventArgs e)
+        {
+            string enlace = "https://www.casadellibro.com/libro-cuando-ya-no-sea-yo/9788408269298/13532360";
+
+            System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
+        }
+
+        // VIDEOS -------------------------------------------------------------------------------------------------
 
         private void AbrirVideo1(object sender, RoutedEventArgs e)
         {
@@ -992,5 +1013,9 @@ namespace LAB_GSI
 
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
         }
+
+
+
+
     }
 }

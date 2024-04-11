@@ -152,18 +152,6 @@
     <Resource Include="imagenes\guiaAsociaciones.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="imagenes\amapolas.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="imagenes\libro2.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="imagenes\libro3.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="imagenes\libro4.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="imagenes\peli1.jpeg" />
   </ItemGroup>
   <ItemGroup>
@@ -177,6 +165,24 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imagenes\video5.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\libro1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\libro2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\libro3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\libro4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\libro5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\ejemplo.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
