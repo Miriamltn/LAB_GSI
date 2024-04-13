@@ -24,7 +24,7 @@ namespace LAB_GSI
             bitmap.EndInit();
 
             // Asignar el BitmapImage al control Image
-            ejemplo.Source = bitmap;
+            //ejemplo.Source = bitmap;
         }
 
         private void CargarDefinicionDesdeXML()

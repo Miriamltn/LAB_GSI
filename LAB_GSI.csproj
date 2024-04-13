@@ -131,9 +131,6 @@
     <Resource Include="imagenes\tabla_nutricion.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="imagenes\tabla_de_ejercicios.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="imagenes\contratar_cuidadoras.png" />
   </ItemGroup>
   <ItemGroup>
@@ -183,6 +180,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="imagenes\ejemplo.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\tabla_de_ejercicios.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -486,7 +486,7 @@
                                 <StackPanel x:Name="peliculas" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
 
                                     <StackPanel x:Name="video_1" Orientation="Vertical" Margin="40,8,24,16">
-                                        <TextBox Text="Para que no me olvides" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16"/>
+                                        <TextBox Text="Para que no me olvides" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" IsEnabled="False"/>
                                         <StackPanel Orientation="Horizontal">
                                             <Button x:Name="video1" Click="AbrirVideo1" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
                                             <Image Source="imagenes/peli1.jpeg" Width="100" Height="100" HorizontalAlignment="Right"/>
@@ -494,7 +494,7 @@
                                     </StackPanel>
 
                                     <StackPanel x:Name="video_2" Orientation="Vertical" Margin="40,8,24,16">
-                                        <TextBox Text="El río de la memoria" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" HorizontalAlignment="Center" TextAlignment="Center"/>
+                                        <TextBox Text="El río de la memoria" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" HorizontalAlignment="Center" TextAlignment="Center" IsEnabled="False"/>
                                         <StackPanel Orientation="Horizontal">
                                             <Button x:Name="video2" Click="AbrirVideo2" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
                                             <Image Source="imagenes/video2.jpeg" Width="103" Height="100" Margin="30,0,0,0"/>
@@ -502,7 +502,7 @@
                                     </StackPanel>
 
                                     <StackPanel x:Name="video_3" Orientation="Vertical" Margin="40,8,24,16">
-                                        <TextBox Text="Y Tu Quien Eres" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
+                                        <TextBox Text="Y Tu Quien Eres" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center" IsEnabled="False"/>
                                         <StackPanel Orientation="Horizontal">
                                             <Button x:Name="video3" Click="AbrirVideo3" Content="Ver película" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
                                             <Image Source="imagenes/video4.jpeg" Width="100" Height="100" HorizontalAlignment="Right"/>
@@ -569,7 +569,7 @@
                                 <StackPanel x:Name="biblioteca" HorizontalAlignment="Left" Grid.Column="1" Grid.ColumnSpan="1">
 
                                     <StackPanel x:Name="libro_1" Orientation="Vertical" Margin="40,8,24,16">
-                                        <TextBox Text="Las amapolas del olvido" Width="161" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16"/>
+                                        <TextBox Text="Las amapolas del olvido" Width="161" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" IsEnabled="False"/>
                                         <StackPanel Orientation="Horizontal">
                                             <Button x:Name="libro1" Click="AbrirLibro1" Content="Comprar libro" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
                                             <Image Source="/imagenes/libro1.png" Width="100" Height="100" HorizontalAlignment="Right"/>
@@ -577,7 +577,7 @@
                                     </StackPanel>
 
                                     <StackPanel x:Name="libro_2" Orientation="Vertical" Margin="40,8,24,16">
-                                        <TextBox Text="El río de la memoria" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" HorizontalAlignment="Center" TextAlignment="Center"/>
+                                        <TextBox Text="El río de la memoria" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" HorizontalAlignment="Center" TextAlignment="Center" IsEnabled="False"/>
                                         <StackPanel Orientation="Horizontal">
                                             <Button x:Name="libro2" Click="AbrirLibro2" Content="Comprar libro" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
                                             <Image Source="/imagenes/libro2.png" Width="79" Height="100" Margin="30,0,0,0"/>
@@ -585,7 +585,7 @@
                                     </StackPanel>
 
                                     <StackPanel x:Name="video_8" Orientation="Vertical" Margin="40,8,24,16">
-                                        <TextBox Text="Siempre Alice" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
+                                        <TextBox Text="Siempre Alice" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center" IsEnabled="False"/>
                                         <StackPanel Orientation="Horizontal">
                                             <Button x:Name="video8" Click="AbrirLibro3" Content="Comprar libro" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
                                             <Image Source="/imagenes/libro3.png" Width="100" Height="100" HorizontalAlignment="Right"/>
@@ -593,7 +593,7 @@
                                     </StackPanel>
 
                                     <StackPanel x:Name="video_9" Orientation="Vertical" Margin="40,8,24,16">
-                                        <TextBox Text="Eclipse" Width="157" Margin="0,0,0,40" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
+                                        <TextBox Text="Eclipse" Width="157" Margin="0,0,0,40" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center" IsEnabled="False"/>
                                         <StackPanel Orientation="Horizontal">
                                             <Button x:Name="video9" Click="AbrirLibro4" Content="Comprar libro" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
                                             <Image Source="/imagenes/libro4.png" Width="83" Height="100" Margin="30,0,0,0"/>
@@ -601,7 +601,7 @@
                                     </StackPanel>
 
                                     <StackPanel x:Name="video_10" Orientation="Vertical" Margin="40,8,24,16">
-                                        <TextBox Text="Recuérdame" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center"/>
+                                        <TextBox Text="Recuérdame" Width="157" Margin="0,0,0,10" Background="#5D574A40" FontWeight="Bold" FontFamily="Bodoni MT" FontSize="16" TextAlignment="Center" HorizontalAlignment="Center" IsEnabled="False"/>
                                         <StackPanel Orientation="Horizontal">
                                             <Button x:Name="video10" Click="AbrirLibro5" Content="Comprar libro" Background="#FFA2E6FD" Cursor="Hand" Width="130" Height="50" FontWeight="Bold" Style="{StaticResource RoundedButton}"/>
                                             <Image Source="/imagenes/libro5.png" Width="100" Height="100" HorizontalAlignment="Right"/>
