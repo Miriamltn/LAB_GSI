@@ -1014,8 +1014,11 @@ namespace LAB_GSI
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
         }
 
-
-
-
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Juego JuegoVentana = new Juego();
+            JuegoVentana.Show();
+            this.Close();
+        }
     }
 }

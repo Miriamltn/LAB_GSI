@@ -58,6 +58,9 @@
     <Compile Include="FotoNutricion.xaml.cs">
       <DependentUpon>FotoNutricion.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Juego.xaml.cs">
+      <DependentUpon>Juego.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TablaEjercicios.xaml.cs">
       <DependentUpon>TablaEjercicios.xaml</DependentUpon>
     </Compile>
@@ -65,6 +68,10 @@
       <DependentUpon>VentanaInicio.xaml</DependentUpon>
     </Compile>
     <Page Include="FotoNutricion.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Juego.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
