@@ -1041,7 +1041,8 @@
             </TabItem>
             <TabItem x:Name="P_Juegos" HorizontalAlignment="Center" Height="20" Header="TabItem" VerticalAlignment="Center" Width="54">
                 <Grid Background="#FFE5E5E5">
-                    <Button Content="Button" HorizontalAlignment="Left" Margin="315,138,0,0" VerticalAlignment="Top" Height="65" Width="137" Click="Button_Click_1"/>
+                    <Button Content="Juego1" HorizontalAlignment="Left" Margin="108,74,0,0" VerticalAlignment="Top" Height="65" Width="137" Click="Button_Click_1"/>
+                    <Button Content="Juego2&#xD;&#xA;" HorizontalAlignment="Left" Margin="406,74,0,0" VerticalAlignment="Top" Height="76" Width="138" Click="Button_Click_2"/>
                 </Grid>
             </TabItem>
 
