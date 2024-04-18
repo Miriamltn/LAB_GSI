@@ -859,7 +859,7 @@ namespace LAB_GSI
 
             // Crea una lista con todos tus Expanders
             List<Expander> allExpanders = new List<Expander> { Expander1, Expander2, Expander3, Expander4, Expander5, 
-                Expander6, Expander6, Expander8, Expander9,Expander10, Expander11, Expander12, Expander13, 
+                Expander6, Expander7, Expander8, Expander9,Expander10, Expander11, Expander12, Expander13, 
                 Expander14, Expander15, Expander16, Expander17, Expander18, Expander19, Expander20, Expander33, Expander34, Expander35, 
                 Expander36, Expander37, Expander38, Expander39, Expander40, Expander41, Expander42, Expander43, Expander44};
 
@@ -896,7 +896,7 @@ namespace LAB_GSI
             tablaEjercicios.Show();
         }
 
-        // Metodos para abrir los links de las asociaciones 
+        // Metodos para abrir los links de las asociaciones -----------------------------------------------------------------------
 
         private void AbrirAiudo(object sender, RoutedEventArgs e)
         {
@@ -1013,6 +1013,8 @@ namespace LAB_GSI
 
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo(enlace) { UseShellExecute = true });
         }
+
+        // ------------------------------------------------------------------------------------------------------------------------
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
