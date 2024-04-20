@@ -215,5 +215,35 @@
   <ItemGroup>
     <Resource Include="imagenes\decora.jpeg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\perro.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\gato.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\coche.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\camiseta.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\mariposa.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\corazon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\hipopotamo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\hospital.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\cine.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="imagenes\cama.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
