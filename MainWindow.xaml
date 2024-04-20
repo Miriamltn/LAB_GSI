@@ -1321,7 +1321,7 @@
                             </Button.Template>
                         </Button>
                         <Button x:Name="Juego3" Content="Juegos 3 miriam" 
-                            FontWeight="Bold" Cursor="Hand" Click="Button_Click_1"
+                            FontWeight="Bold" Cursor="Hand" Click="Button_Click_3"
                             BorderThickness="0" Height="50" Width="148" Background="PowderBlue" Margin="85,80,0,0" HorizontalAlignment="Left">
 
                             <Button.Template>

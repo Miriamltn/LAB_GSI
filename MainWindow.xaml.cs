@@ -1029,5 +1029,12 @@ namespace LAB_GSI
             JuegoSonidos.Show();
             this.Close();
         }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            Juego3 JuegoNuevo = new Juego3();
+            JuegoNuevo.Show();
+            this.Close();
+        }
     }
 }
