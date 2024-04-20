@@ -88,7 +88,7 @@
                                     <StackPanel
                      Margin="24,8,24,16"
                      Orientation="Vertical">
-                                        <TextBlock x:Name="tb_definicion" TextWrapping="Wrap">
+                                        <TextBlock x:Name="tb_definicion" TextWrapping="Wrap" TextAlignment="Justify">
                      <Run Language="es-es" Text="Definición de la enfermedad"/>
                                         </TextBlock>
 
@@ -138,7 +138,7 @@
                                     <StackPanel
                      Margin="24,8,24,16"
                      Orientation="Vertical">
-                                        <TextBlock x:Name="tb_sintomas" TextWrapping="Wrap">
+                                        <TextBlock x:Name="tb_sintomas" TextWrapping="Wrap" TextAlignment="Justify">
                      <Run Language="es-es" Text="Síntomas de la enfermedad"/>
                                         </TextBlock>
                                     </StackPanel>
@@ -153,7 +153,7 @@
                                     <StackPanel
                      Margin="24,8,24,16"
                      Orientation="Vertical">
-                                        <TextBlock x:Name="tb_fases" TextWrapping="Wrap">
+                                        <TextBlock x:Name="tb_fases" TextWrapping="Wrap" TextAlignment="Justify">
                       <Run Language="es-es" Text="Son 3 fases"/>
                                         </TextBlock>
                                     </StackPanel>
@@ -168,7 +168,7 @@
                                     <StackPanel
                      Margin="24,8,24,16"
                      Orientation="Vertical">
-                                        <TextBlock x:Name="tb_avances" TextWrapping="Wrap"> 
+                                        <TextBlock x:Name="tb_avances" TextWrapping="Wrap" TextAlignment="Justify"> 
                      <Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/>
                                         </TextBlock>
                                     </StackPanel>
@@ -187,7 +187,7 @@
                                     <StackPanel
                      Margin="24,8,24,16"
                      Orientation="Vertical">
-                                        <TextBlock x:Name="tb_causas" TextWrapping="Wrap">
+                                        <TextBlock x:Name="tb_causas" TextWrapping="Wrap" TextAlignment="Justify">
                      <Run Language="es-es" Text="Deficits"/>
                                         </TextBlock>
                                     </StackPanel>
@@ -202,7 +202,7 @@
                                     <StackPanel
                      Margin="24,8,24,16"
                      Orientation="Vertical">
-                                        <TextBlock x:Name="tb_Esperanza" TextWrapping="Wrap">
+                                        <TextBlock x:Name="tb_Esperanza" TextWrapping="Wrap" TextAlignment="Justify">
                      <Run Language="es-es" Text="Síntomas de la enfermedad"/>
                                         </TextBlock>
                                     </StackPanel>
@@ -217,7 +217,7 @@
                                     <StackPanel
                      Margin="24,8,24,16"
                      Orientation="Vertical">
-                                        <TextBlock x:Name="tb_comoActuar" TextWrapping="Wrap">
+                                        <TextBlock x:Name="tb_comoActuar" TextWrapping="Wrap" TextAlignment="Justify">
                      <Run Language="es-es" Text="Son 3 fases"/>
                                         </TextBlock>
                                     </StackPanel>
@@ -233,7 +233,7 @@
                                     <StackPanel
                      Margin="24,8,24,16"
                      Orientation="Vertical">
-                                        <TextBlock x:Name="tb_fisicas" TextWrapping="Wrap">
+                                        <TextBlock x:Name="tb_fisicas" TextWrapping="Wrap" TextAlignment="Justify">
                      <Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/>
                                         </TextBlock>
                                     </StackPanel>
@@ -296,7 +296,7 @@
                                         <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold"><Run Language="es-es" Text="Consejos sobre Nutrición"/></TextBlock>
                                     </Expander.Header>
                                     <StackPanel Margin="24,8,24,16" Orientation="Vertical">
-                                        <TextBlock x:Name="tb_nutricion" TextWrapping="Wrap">
+                                        <TextBlock x:Name="tb_nutricion" TextWrapping="Wrap" TextAlignment="Justify">
                      <Run Language="es-es" Text="Definición de la enfermedad"/>
                                         </TextBlock>
                                         <Button Content="Mostrar Imagen" Click="MostrarImagen_Click" Background="#FFE0D96F" Margin="0,20,0,0" HorizontalAlignment="Center" Cursor="Hand" Width="135"  Style="{StaticResource RoundedButton}">
@@ -335,7 +335,7 @@
                                     <StackPanel
                  Margin="24,8,24,16"
                  Orientation="Vertical">
-                                        <TextBlock x:Name="tb_cuidadosBasicos" TextWrapping="Wrap"><Run Language="es-es" Text="Síntomas de la enfermedad"/></TextBlock>
+                                        <TextBlock x:Name="tb_cuidadosBasicos" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Síntomas de la enfermedad"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
 
@@ -346,7 +346,7 @@
                                     <StackPanel
                  Margin="24,8,24,16"
                  Orientation="Vertical">
-                                        <TextBlock x:Name="tb_comunicacion" TextWrapping="Wrap"><Run Language="es-es" Text="Son 3 fases"/></TextBlock>
+                                        <TextBlock x:Name="tb_comunicacion" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Son 3 fases"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
 
@@ -357,7 +357,7 @@
                                     <StackPanel
                  Margin="24,8,24,16"
                  Orientation="Vertical">
-                                        <TextBlock x:Name="tb_ducha" TextWrapping="Wrap"><Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/></TextBlock>
+                                        <TextBlock x:Name="tb_ducha" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
 
@@ -372,7 +372,7 @@
                                     <StackPanel
                  Margin="24,8,24,16"
                  Orientation="Vertical">
-                                        <TextBlock x:Name="tb_enfermeria" TextWrapping="Wrap"><Run Language="es-es" Text="Deficits"/></TextBlock>
+                                        <TextBlock x:Name="tb_enfermeria" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Deficits"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
 
@@ -383,7 +383,7 @@
                                     <StackPanel
                  Margin="24,8,24,16"
                  Orientation="Vertical">
-                                        <TextBlock x:Name="tb_salud" TextWrapping="Wrap"><Run Language="es-es" Text="Síntomas de la enfermedad"/></TextBlock>
+                                        <TextBlock x:Name="tb_salud" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Síntomas de la enfermedad"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
 
@@ -394,7 +394,7 @@
                                     <StackPanel
                  Margin="24,8,24,16"
                  Orientation="Vertical">
-                                        <TextBlock x:Name="tb_ejercicioDudas" TextWrapping="Wrap"><Run Language="es-es" Text="Son 3 fases"/></TextBlock>
+                                        <TextBlock x:Name="tb_ejercicioDudas" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Son 3 fases"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
 
@@ -405,7 +405,7 @@
                                     <StackPanel
                  Margin="24,8,24,16"
                  Orientation="Vertical">
-                                        <TextBlock x:Name="tb_legal" TextWrapping="Wrap"><Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/></TextBlock>
+                                        <TextBlock x:Name="tb_legal" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Avances de los tratamientos de la enfermedad"/></TextBlock>
                                     </StackPanel>
                                 </Expander>
 
@@ -425,9 +425,10 @@
                         <GradientStop Color="#FFD4AF37" Offset="1"/>
                     </LinearGradientBrush>
                 </TabItem.Background>
-
+                
+                
                 <ScrollViewer>
-                    <Grid Height="408" Width="777">
+                    <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="50*"/>
                             <ColumnDefinition Width="50*"/>
@@ -437,11 +438,11 @@
                         </Grid.RowDefinitions>
 
                         <Button x:Name="btn_tabla_ejercicios" 
-                            Content="Mostar Tabla de Ejercicos"
-                            FontWeight="Bold"
-                            Cursor="Hand"
-                            Click="AbrirTablaEjercicios"
-                            BorderThickness="0" Background="#AFB5DC7E" Margin="130,344,101,0" Grid.Column="1" Height="36" VerticalAlignment="Top">
+                    Content="Mostar Tabla de Ejercicos"
+                    FontWeight="Bold"
+                    Cursor="Hand"
+                    Click="AbrirTablaEjercicios"
+                    BorderThickness="0" Background="#AFB5DC7E" Margin="130,344,101,0" Grid.Column="1" Height="36" VerticalAlignment="Top">
                             <Button.Template>
                                 <ControlTemplate TargetType="{x:Type Button}">
                                     <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10" RenderTransformOrigin="0.5,0.5">
@@ -468,20 +469,14 @@
                         </Button>
 
 
-
-                        <Image x:Name="gif" Source="/imagenes/decora.jpeg" Margin="92,60,83,119" Grid.Column="1" />
-
-                        <StackPanel x:Name="rutinas" Margin="-3,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="390" Height="404">
+                        <StackPanel x:Name="rutinas" Margin="-3,0,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="390">
 
                             <Expander x:Name="Expander17" HorizontalAlignment="Stretch" Expanded="Expander_Expanded" Margin="24,40,24,60" Cursor="Hand" BorderBrush="#FF192841" Background="#40ADD8E6">
                                 <Expander.Header>
                                     <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Estiramiento de cuello y hombros"/>
                                 </Expander.Header>
-                                <StackPanel
-                    Margin="24,8,24,16"
-                    Orientation="Vertical">
-                                    <TextBlock x:Name="tb_ejercicio1" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 1"/></TextBlock>
-
+                                <StackPanel Margin="24,8,24,16" Orientation="Vertical">
+                                    <TextBlock x:Name="tb_ejercicio1" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Estiramiento 1"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
@@ -489,10 +484,8 @@
                                 <Expander.Header>
                                     <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Estiramiento de brazos y espalda"/>
                                 </Expander.Header>
-                                <StackPanel
-                    Margin="24,8,24,16"
-                    Orientation="Vertical">
-                                    <TextBlock x:Name="tb_ejercicio2" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 2"/></TextBlock>
+                                <StackPanel Margin="24,8,24,16" Orientation="Vertical">
+                                    <TextBlock x:Name="tb_ejercicio2" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Estiramiento 2"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
@@ -500,10 +493,8 @@
                                 <Expander.Header>
                                     <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Estiramiento de piernas"/>
                                 </Expander.Header>
-                                <StackPanel
-                    Margin="24,8,24,16"
-                    Orientation="Vertical">
-                                    <TextBlock x:Name="tb_ejercicio3" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 3"/></TextBlock>
+                                <StackPanel Margin="24,8,24,16" Orientation="Vertical">
+                                    <TextBlock x:Name="tb_ejercicio3" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Estiramiento 3"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
@@ -511,10 +502,8 @@
                                 <Expander.Header>
                                     <TextBlock TextWrapping="Wrap" FontSize="14" FontWeight="Bold" Text="Estiramiento de manos y muñecas"/>
                                 </Expander.Header>
-                                <StackPanel
-                    Margin="24,8,24,16"
-                    Orientation="Vertical">
-                                    <TextBlock x:Name="tb_ejercicio4" TextWrapping="Wrap"><Run Language="es-es" Text="Estiramiento 4"/><LineBreak/><Run Language="es-es"/></TextBlock>
+                                <StackPanel Margin="24,8,24,16" Orientation="Vertical">
+                                    <TextBlock x:Name="tb_ejercicio4" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Estiramiento 4"/><LineBreak/><Run Language="es-es"/></TextBlock>
                                 </StackPanel>
                             </Expander>
 
@@ -522,10 +511,8 @@
 
                     </Grid>
                 </ScrollViewer>
-
             </TabItem>
 
-            <!-- Tab Recursos -->
             <TabItem x:Name="P_Recursos" Header="Recursos" >
                 <TabItem.Background>
                     <LinearGradientBrush EndPoint="0,1">
@@ -1011,7 +998,7 @@
                                         <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                            <TextBlock x:Name="tb_cuidador1" TextWrapping="Wrap"><Run Language="es-es" Text="Definición de la enfermedad"/></TextBlock>
+                                            <TextBlock x:Name="tb_cuidador1" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Definición de la enfermedad"/></TextBlock>
                                         </StackPanel>
                                     </Expander>
 
@@ -1022,7 +1009,7 @@
                                         <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                            <TextBlock x:Name="tb_cuidador2" TextWrapping="Wrap"><Run Language="es-es" Text="Def anomia"/></TextBlock>
+                                            <TextBlock x:Name="tb_cuidador2" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Def anomia"/></TextBlock>
                                         </StackPanel>
                                     </Expander>
 
@@ -1033,7 +1020,7 @@
                                         <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                            <TextBlock x:Name="tb_cuidador3" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                            <TextBlock x:Name="tb_cuidador3" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Definicion"/></TextBlock>
                                         </StackPanel>
                                     </Expander>
 
@@ -1044,7 +1031,7 @@
                                         <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                            <TextBlock x:Name="tb_cuidador4" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                            <TextBlock x:Name="tb_cuidador4" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Definicion"/></TextBlock>
                                         </StackPanel>
                                     </Expander>
                                     <Expander x:Name="Expander37" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Width="316" Margin="24,8,24,60">
@@ -1054,7 +1041,7 @@
                                         <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                            <TextBlock x:Name="tb_cuidador5" TextWrapping="Wrap"><Run Language="es-es" Text="Definición"/></TextBlock>
+                                            <TextBlock x:Name="tb_cuidador5" TextWrapping="Wrap" TextAlignment="Justify" ><Run Language="es-es" Text="Definición"/></TextBlock>
                                         </StackPanel>
                                     </Expander>
                                     <Expander x:Name="Expander38" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
@@ -1064,7 +1051,7 @@
                                         <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                            <TextBlock x:Name="tb_cuidador6" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                            <TextBlock x:Name="tb_cuidador6" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Definicion"/></TextBlock>
                                         </StackPanel>
                                     </Expander>
                                     <Expander x:Name="Expander39" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
@@ -1074,7 +1061,7 @@
                                         <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                            <TextBlock x:Name="tb_cuidador7" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                            <TextBlock x:Name="tb_cuidador7" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Definicion"/></TextBlock>
                                         </StackPanel>
                                     </Expander>
                                     <Expander x:Name="Expander40" Expanded="Expander_Expanded" Cursor="Hand" BorderBrush="#FF192841" Background="#60582040" Margin="24,8,24,60">
@@ -1084,7 +1071,7 @@
                                         <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                            <TextBlock x:Name="tb_cuidador8" TextWrapping="Wrap"><Run Language="es-es" Text="Definicion"/></TextBlock>
+                                            <TextBlock x:Name="tb_cuidador8" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Definicion"/></TextBlock>
                                         </StackPanel>
                                     </Expander>
 
@@ -1138,7 +1125,7 @@
                                         <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                            <TextBlock x:Name="tb_equivocarse" TextWrapping="Wrap"><Run Language="es-es" Text="TE PUEDES EQUIVOCAR"/></TextBlock>
+                                            <TextBlock x:Name="tb_equivocarse" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="TE PUEDES EQUIVOCAR"/></TextBlock>
                                         </StackPanel>
                                     </Expander>
 
@@ -1150,7 +1137,7 @@
                                         <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                            <TextBlock x:Name="tb_no_pares" TextWrapping="Wrap"><Run Language="es-es" Text="NO TE PARES"/></TextBlock>
+                                            <TextBlock x:Name="tb_no_pares" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="NO TE PARES"/></TextBlock>
                                         </StackPanel>
                                     </Expander>
 
@@ -1161,7 +1148,7 @@
                                         <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                            <TextBlock x:Name="tb_humor" TextWrapping="Wrap"><Run Language="es-es" Text="No pierdad el sentido del humor"/></TextBlock>
+                                            <TextBlock x:Name="tb_humor" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="No pierdad el sentido del humor"/></TextBlock>
                                         </StackPanel>
                                     </Expander>
 
@@ -1172,7 +1159,7 @@
                                         <StackPanel
                                     Margin="24,8,24,16"
                                     Orientation="Vertical">
-                                            <TextBlock x:Name="tb_dejate_ayudar" TextWrapping="Wrap"><Run Language="es-es" Text="Déjate ayudar"/></TextBlock>
+                                            <TextBlock x:Name="tb_dejate_ayudar" TextWrapping="Wrap" TextAlignment="Justify"><Run Language="es-es" Text="Déjate ayudar"/></TextBlock>
                                         </StackPanel>
                                     </Expander>
 
