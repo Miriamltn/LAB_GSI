@@ -1342,7 +1342,7 @@
         Cursor="Hand"
         BorderThickness="0" 
         Height="50" 
-        Width="148" Background="PowderBlue" HorizontalAlignment="Center" Margin="0,46,0,0">
+        Width="148" Background="PowderBlue" HorizontalAlignment="Center" Margin="0,46,0,0" Click="Juego4_Click">
 
                             <Button.Template>
                                 <ControlTemplate TargetType="{x:Type Button}">

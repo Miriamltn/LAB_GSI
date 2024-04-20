@@ -1036,5 +1036,12 @@ namespace LAB_GSI
             JuegoNuevo.Show();
             this.Close();
         }
+
+        private void Juego4_Click(object sender, RoutedEventArgs e)
+        {
+            Juego4 JuegoNuevo2 = new Juego4();
+            JuegoNuevo2.Show();
+            this.Close();
+        }
     }
 }
