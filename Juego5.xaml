@@ -1,0 +1,52 @@
+﻿<Window x:Class="LAB_GSI.Juego5"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LAB_GSI"
+        mc:Ignorable="d"
+        Title="Juego5" Height="450" Width="800">
+    
+    <StackPanel Grid.Row="1" Orientation="Horizontal">
+        <ListBox Name="ConceptsListBox" ItemsSource="{Binding Concepts}" AllowDrop="True" Drop="ConceptsListBox_Drop">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding}" Padding="5"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StackPanel Width="200">
+            <TextBlock Text="Animales" FontWeight="Bold" Margin="0 0 0 5"/>
+            <ListBox Name="AnimalsListBox" AllowDrop="True" Drop="AnimalsListBox_Drop" Width="200" Height="300">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Padding="5" MouseDown="Item_MouseDown"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        <StackPanel Width="200" Margin="10 0 0 0">
+            <TextBlock Text="Muebles" FontWeight="Bold" Margin="0 0 0 5"/>
+            <ListBox Name="FurnitureListBox" AllowDrop="True" Drop="FurnitureListBox_Drop" Width="200" Height="300">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Padding="5" MouseDown="Item_MouseDown"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        <StackPanel Width="200" Margin="10 0 0 0">
+            <TextBlock Text="Paisaje" FontWeight="Bold" Margin="0 0 0 5"/>
+            <ListBox Name="LandscapeListBox" AllowDrop="True" Drop="LandscapeListBox_Drop" Width="200" Height="300">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" Padding="5" MouseDown="Item_MouseDown"/>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+    </StackPanel>
+
+
+</Window>

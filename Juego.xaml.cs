@@ -34,7 +34,6 @@ namespace LAB_GSI
         private bool isBusy;
 
         public ICommand CardClickedCommand { get; }
-        public ICommand RestartCommand { get; }
 
         public ObservableCollection<Card> Cards
         {
@@ -63,10 +62,7 @@ namespace LAB_GSI
             }
 
             Shuffle(cards);
-
-
         }
-
 
         private void Shuffle<T>(IList<T> list)
         {
@@ -93,19 +89,6 @@ namespace LAB_GSI
             }
 
             return colors;
-        }
-        private void RestartGame(object parameter)
-        {
-            InitializeGame();
-            foreach (var card in cards)
-            {
-                card.IsFlipped = false;
-                card.IsMatched = false;
-            }
-            AllCardsMatched = false; // Restablecer a false al reiniciar el juego
-
-            // Ocultar el mensaje "¡Ganaste!"
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AllCardsMatched)));
         }
 
         private void CardClicked(Card clickedCard)
@@ -138,24 +121,23 @@ namespace LAB_GSI
                 if (cards.All(card => card.IsMatched))
                 {
                     AllCardsMatched = true;
+                    MessageBox.Show("¡Ganaste!");
                 }
             }
             else
             {
-                System.Threading.Tasks.Task.Delay(TimeSpan.FromSeconds(1)).ContinueWith(_ =>
+                Task.Delay(TimeSpan.FromSeconds(1)).ContinueWith(_ =>
                 {
                     selectedCard.IsFlipped = false;
                     clickedCard.IsFlipped = false;
                     selectedCard = null;
                     isBusy = false;
                     PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(CardClickedCommand)));
-                }, System.Threading.Tasks.TaskScheduler.FromCurrentSynchronizationContext());
+                }, TaskScheduler.FromCurrentSynchronizationContext());
             }
 
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Cards)));
-
         }
-
 
         private bool allCardsMatched;
         public bool AllCardsMatched
@@ -167,8 +149,8 @@ namespace LAB_GSI
                 PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(AllCardsMatched)));
             }
         }
-
     }
+
     public class Card : INotifyPropertyChanged
     {
         private string animal;

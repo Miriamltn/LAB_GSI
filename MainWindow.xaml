@@ -1457,7 +1457,7 @@
                                 </ControlTemplate>
                             </Button.Template>
                         </Button>
-                        <Button x:Name="Juego3" Content="Juegos 3 miriam" 
+                        <Button x:Name="Juego3" Content="Preguntas y respuestas" 
                             FontWeight="Bold" Cursor="Hand" Click="Button_Click_3"
                             BorderThickness="0" Height="50" Width="148" Background="PowderBlue" Margin="85,80,0,0" HorizontalAlignment="Left">
 
@@ -1474,7 +1474,7 @@
                     <StackPanel x:Name="juegos2" Grid.ColumnSpan="2" Margin="396,1,1,-2">
 
                         <Button x:Name="Juego4"
-        Content="Juego4"
+        Content="Asocia la imágen"
         FontWeight="Bold"
         Cursor="Hand"
         BorderThickness="0" 

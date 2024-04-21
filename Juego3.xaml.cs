@@ -48,13 +48,13 @@ namespace LAB_GSI
         new List<string> { "Júpiter", "Saturno", "Urano", "Neptuno" },
         new List<string> { "Fémur", "Húmero", "Radio", "Fíbula" },
         new List<string> { "Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Michelangelo" },
-        new List<string> { "Portugués", "Inglés", "Español", "Francés" },
-        new List<string> { "Monte Everest", "Mont Blanc", "K2", "Annapurna" },
+        new List<string> { "Francés", "Inglés", "Español", "Francés", "Portugués" },
+        new List<string> {  "Annapurna", "Mont Blanc", "K2","Monte Everest" },
         new List<string> { "Mercurio", "Plomo", "Hierro", "Sodio" },
         new List<string> { "Rusia", "Canadá", "Estados Unidos", "China" },
-        new List<string> { "Mamífero", "Reptil", "Ave", "Anfibio" },
+        new List<string> { "Reptil", "Mamífero", "Ave", "Anfibio" },
         new List<string> { "George Washington", "Thomas Jefferson", "Abraham Lincoln", "John Adams" },
-        new List<string> { "China", "India", "Estados Unidos", "Indonesia" },
+        new List<string> { "Indonesia", "India", "Estados Unidos", "China" },
         new List<string> { "Miguel de Cervantes", "Federico García Lorca", "Gabriel García Márquez", "Pablo Neruda" }
         };
 

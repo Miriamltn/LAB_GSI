@@ -5,10 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LAB_GSI"
         mc:Ignorable="d"
-        Title="Juego2" Height="450" Width="800">
+        Title="Memory Game" Height="450" Width="800">
     <Window.Resources>
         <Style TargetType="Button">
-            <Setter Property="OverridesDefaultStyle" Value="True"/>
+            <Setter Property="Background" Value="#FFD4DFF9"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontFamily" Value="Arial"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="BorderThickness" Value="2"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
@@ -23,23 +27,23 @@
             </Setter>
         </Style>
     </Window.Resources>
-    <Grid>
+    <Grid Background="#FFEEEEEE">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <StackPanel Grid.Row="0" Margin="10">
-            <TextBlock Text="Memory Game" FontSize="24" HorizontalAlignment="Center" />
+            <TextBlock Text="Simón Dice" FontSize="36" HorizontalAlignment="Center" Margin="0 0 0 20"/>
             <StackPanel x:Name="GamePanel" Margin="0 20" Orientation="Horizontal" HorizontalAlignment="Center" />
             <StackPanel x:Name="ButtonPanel" Margin="0 10" Orientation="Horizontal" HorizontalAlignment="Center" />
-            <Button x:Name="btn_empezar" Content="¡Empezar!" Click="StartButton_Click" Width="113" HorizontalAlignment="Center" BorderBrush="#FFD4DFF9" FontSize="22" Height="35" />
-            <TextBlock x:Name="StatusLabel" FontSize="16" Margin="0 10" HorizontalAlignment="Center" />
-            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                <TextBlock Text="Aciertos: " FontSize="16" Foreground="Black" Background="#FF63FF00" />
-                <TextBlock x:Name="CorrectCount" Text="0" FontSize="16" />
-                <TextBlock Text="  |  " FontSize="16" />
-                <TextBlock Text="Fallos: " FontSize="16" Background="#FFFF0045" />
-                <TextBlock x:Name="WrongCount" Text="0" FontSize="16" />
+            <Button x:Name="btn_empezar" Content="¡Empezar!" Click="StartButton_Click" Width="150" HorizontalAlignment="Center" FontSize="24" Height="50" Margin="0 20"/>
+            <TextBlock x:Name="StatusLabel" FontSize="20" Margin="0 10" HorizontalAlignment="Center" FontWeight="Bold"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 20">
+                <TextBlock Text="Aciertos: " FontSize="20" Foreground="Black" Background="#FF63FF00" Padding="5"/>
+                <TextBlock x:Name="CorrectCount" Text="0" FontSize="20" Background="#FF63FF00" Padding="5"/>
+                <TextBlock Text="  |  " FontSize="20" />
+                <TextBlock Text="Fallos: " FontSize="20" Background="#FFFF0045" Padding="5"/>
+                <TextBlock x:Name="WrongCount" Text="0" FontSize="20" Background="#FFFF0045" Padding="5"/>
             </StackPanel>
         </StackPanel>
     </Grid>

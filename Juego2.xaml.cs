@@ -55,7 +55,7 @@ namespace LAB_GSI
             sequence.Clear();
             currentIndex = 0;
             awaitingInput = false;
-            StatusLabel.Text = "Watch the sequence and repeat it.";
+            StatusLabel.Text = "Mira la secuencia y repitela.";
 
             // Generar una secuencia de 5 colores aleatorios
             Random random = new Random();
@@ -99,7 +99,7 @@ namespace LAB_GSI
             GamePanel.Children.Add(button);
             PlaySound(soundMappings[colorIndex]);
 
-            await Task.Delay(800); // Mantener resaltado durante 0.8 segundos
+            await Task.Delay(1500); // Mantener resaltado durante 0.8 segundos
             GamePanel.Children.Remove(button);
         }
 

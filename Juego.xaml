@@ -10,33 +10,43 @@
         <!-- Convertidor para convertir un valor booleano en Visibility -->
         <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
     </Window.Resources>
-    <Grid>
+    <Grid Background="#FFEEEEEE">
         <Grid.RowDefinitions>
             <RowDefinition Height="*" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <!-- Aquí es donde se mostrarán las cartas -->
-        <ItemsControl Grid.Row="0" ItemsSource="{Binding Cards}">
-            <ItemsControl.ItemsPanel>
-                <ItemsPanelTemplate>
-                    <UniformGrid Rows="4" Columns="4" />
-                </ItemsPanelTemplate>
-            </ItemsControl.ItemsPanel>
-            <ItemsControl.ItemTemplate>
-                <DataTemplate>
-                    <Button Content="{Binding DisplayValue}" Command="{Binding DataContext.CardClickedCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
-            CommandParameter="{Binding}" Width="100" Height="100" FontSize="20"
-            Background="{Binding BackgroundColor}">
-                        <Button.Style>
-                            <Style TargetType="Button">
-                                <!-- Puedes mantener cualquier otro estilo que quieras aplicar aquí -->
-                            </Style>
-                        </Button.Style>
-                    </Button>
-                </DataTemplate>
-            </ItemsControl.ItemTemplate>
-        </ItemsControl>
+        <!-- Cartas en el fondo -->
+        <Grid Grid.Row="0">
+            <Grid.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="#FF02F78D" BorderBrush="Transparent" BorderThickness="2" CornerRadius="5">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+            </Grid.Resources>
+
+            <ItemsControl ItemsSource="{Binding Cards}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <UniformGrid Rows="4" Columns="4" />
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Button Content="{Binding DisplayValue}" Command="{Binding DataContext.CardClickedCommand, RelativeSource={RelativeSource AncestorType=ItemsControl}}"
+                CommandParameter="{Binding}" Width="100" Height="100" FontSize="20"
+                Background="{Binding BackgroundColor}" Margin="5"/>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Grid>
 
         <!-- Border para mostrar "¡Ganaste!" cuando todas las cartas estén emparejadas -->
         <Border x:Name="WinnerBorder" Background="Transparent" Margin="10" Visibility="{Binding AllCardsMatched, Converter={StaticResource BoolToVisibilityConverter}}">
@@ -44,14 +54,12 @@
             <TextBlock Text="¡Ganaste!" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <TextBlock.Style>
                     <Style TargetType="TextBlock">
-                        <Setter Property="Foreground" Value="Green"/>
+                        <Setter Property="Foreground" Value="#FF02F78D"/>
                         <Setter Property="Background" Value="LightYellow"/>
                     </Style>
                 </TextBlock.Style>
             </TextBlock>
         </Border>
 
-        <!-- Botón para reiniciar el juego -->
-        <Button Content="Reiniciar Juego" Command="{Binding RestartCommand}" Grid.Row="1" Width="150" Height="40" Margin="5"/>
     </Grid>
 </Window>

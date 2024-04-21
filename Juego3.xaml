@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:LAB_GSI"
         mc:Ignorable="d"
         Title="Juego3" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#F2F2F2">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -16,14 +16,14 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <TextBlock x:Name="questionTextBlock" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" TextWrapping="Wrap" FontSize="16" />
+        <TextBlock x:Name="questionTextBlock" Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" Foreground="#333333" />
         <StackPanel x:Name="optionsStackPanel" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
             <!-- Botones de opciones -->
         </StackPanel>
-        <Button x:Name="checkButton" Grid.Row="2" Content="Comprobar respuesta" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Click="CheckButton_Click" />
-        <TextBlock x:Name="resultTextBlock" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" TextWrapping="Wrap" FontSize="16" Visibility="Collapsed" />
-        <Button x:Name="nextButton" Grid.Row="4" Content="Siguiente pregunta" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10" Click="NextButton_Click" Visibility="Collapsed"/>
-        <Button x:Name="checkAllButton" Grid.Row="5" Content="Comprobar respuestas finales" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10" Click="CheckAllButton_Click" Visibility="Collapsed"/>
-       
+        <Button x:Name="checkButton" Grid.Row="2" Content="Comprobar respuesta" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Background="#007ACC" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10,5" Click="CheckButton_Click" />
+        <TextBlock x:Name="resultTextBlock" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" Foreground="Green" Visibility="Collapsed" />
+        <Button x:Name="nextButton" Grid.Row="4" Content="Siguiente pregunta" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10" Background="#007ACC" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10,5" Click="NextButton_Click" Visibility="Collapsed"/>
+        <Button x:Name="checkAllButton" Grid.Row="5" Content="Comprobar respuestas finales" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="10" Background="#007ACC" Foreground="White" FontSize="16" FontWeight="Bold" Padding="10,5" Click="CheckAllButton_Click" Visibility="Collapsed"/>
+
     </Grid>
 </Window>
