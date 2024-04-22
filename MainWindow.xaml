@@ -1429,6 +1429,7 @@
                     </Grid.Background>
 
                     <StackPanel x:Name="juegos1">
+
                         <Button x:Name="Simondice" Content="Simon dice" 
                             FontWeight="Bold" Cursor="Hand" Click="Button_Click_2" 
                             BorderThickness="0" HorizontalAlignment="Left" 
@@ -1437,92 +1438,194 @@
 
                             <Button.Template>
                                 <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10" RenderTransformOrigin="0.5,0.5">
                                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                     </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter TargetName="border" Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="False">
+                                            <Setter TargetName="border" Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
                                 </ControlTemplate>
                             </Button.Template>
                         </Button>
+
+
                         <Button x:Name="Parejas" Content="Buscar las parejas"
-                            FontWeight="Bold" Cursor="Hand" 
-                            Click="Button_Click_1" BorderThickness="0" 
-                            Height="50" Width="148" Background="PowderBlue" Margin="85,80,0,0" HorizontalAlignment="Left" 
-                            >
+        FontWeight="Bold" Cursor="Hand" 
+        Click="Button_Click_1" BorderThickness="0" 
+        Height="50" Width="148" Background="PowderBlue" Margin="85,80,0,0" HorizontalAlignment="Left" 
+        >
 
                             <Button.Template>
                                 <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10" RenderTransformOrigin="0.5,0.5">
                                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                     </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter TargetName="border" Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="False">
+                                            <Setter TargetName="border" Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
                                 </ControlTemplate>
                             </Button.Template>
                         </Button>
+
                         <Button x:Name="Juego3" Content="Preguntas y respuestas" 
-                            FontWeight="Bold" Cursor="Hand" Click="Button_Click_3"
-                            BorderThickness="0" Height="50" Width="148" Background="PowderBlue" Margin="85,80,0,0" HorizontalAlignment="Left">
+        FontWeight="Bold" Cursor="Hand" Click="Button_Click_3"
+        BorderThickness="0" Height="50" Width="148" Background="PowderBlue" Margin="85,80,0,0" HorizontalAlignment="Left">
 
                             <Button.Template>
                                 <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10" RenderTransformOrigin="0.5,0.5">
                                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                     </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter TargetName="border" Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="False">
+                                            <Setter TargetName="border" Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
                                 </ControlTemplate>
                             </Button.Template>
                         </Button>
+
+
                     </StackPanel>
 
                     <StackPanel x:Name="juegos2" Grid.ColumnSpan="2" Margin="396,1,1,-2">
 
                         <Button x:Name="Juego4"
-        Content="Asocia la imágen"
-        FontWeight="Bold"
-        Cursor="Hand"
-        BorderThickness="0" 
-        Height="50" 
-        Width="148" Background="PowderBlue" HorizontalAlignment="Center" Margin="0,46,0,0" Click="Juego4_Click">
+                            Content="Asocia la imágen"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            BorderThickness="0" 
+                            Height="50" 
+                            Width="148" Background="PowderBlue" HorizontalAlignment="Center" Margin="0,46,0,0" Click="Juego4_Click">
 
                             <Button.Template>
                                 <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10" RenderTransformOrigin="0.5,0.5">
                                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                     </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter TargetName="border" Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="False">
+                                            <Setter TargetName="border" Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
                                 </ControlTemplate>
                             </Button.Template>
                         </Button>
 
                         <Button x:Name="Juego5"
-        Content="Juego5"
-        FontWeight="Bold"
-        Cursor="Hand"
-        BorderThickness="0" 
-        Height="50" 
-        Width="148" Background="PowderBlue" HorizontalAlignment="Center" Margin="0,80,0,0">
+                            Content="Juego5"
+                            FontWeight="Bold"
+                            Cursor="Hand"
+                            BorderThickness="0" 
+                            Height="50" 
+                            Width="148" Background="PowderBlue" HorizontalAlignment="Center" Margin="0,80,0,0">
 
                             <Button.Template>
                                 <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10" RenderTransformOrigin="0.5,0.5">
                                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                     </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter TargetName="border" Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="False">
+                                            <Setter TargetName="border" Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
                                 </ControlTemplate>
                             </Button.Template>
                         </Button>
 
                         <Button x:Name="Juego6"
-        Content="Juego6"
-        FontWeight="Bold"
-        Cursor="Hand"
-        BorderThickness="0" 
-        Height="50" 
-        Width="150" Background="PowderBlue" HorizontalAlignment="Center" Margin="0,80,0,0">
+                             Content="Juego6"
+                             FontWeight="Bold"
+                             Cursor="Hand"
+                             BorderThickness="0" 
+                             Height="50" 
+                             Width="150" Background="PowderBlue" HorizontalAlignment="Center" Margin="0,80,0,0">
 
                             <Button.Template>
                                 <ControlTemplate TargetType="{x:Type Button}">
-                                    <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10">
+                                    <Border x:Name="border" Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="0" CornerRadius="10" RenderTransformOrigin="0.5,0.5">
                                         <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                                     </Border>
+                                    <ControlTemplate.Triggers>
+                                        <Trigger Property="IsPressed" Value="True">
+                                            <Setter TargetName="border" Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="0.9" ScaleY="0.9"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                        <Trigger Property="IsPressed" Value="False">
+                                            <Setter TargetName="border" Property="RenderTransform">
+                                                <Setter.Value>
+                                                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Trigger>
+                                    </ControlTemplate.Triggers>
                                 </ControlTemplate>
                             </Button.Template>
                         </Button>
+
 
                     </StackPanel>
 
